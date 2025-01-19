@@ -50,6 +50,10 @@ $: autoFilterPOS(doAutoFilterPOS, selection);
 const ROWS = Object.entries(AUDIO_FILENAMES).flatMap(([category, filenames]) =>
 	filenames.map((filename) => ({ category, filename })),
 );
+
+function caseInsensitiveSearch(needle: string, haystack: string) {
+    return haystack.toLowerCase().includes(needle.toLowerCase());
+}
 </script>
 
 <PageTitle title="Audio builder"/>
@@ -124,8 +128,8 @@ const ROWS = Object.entries(AUDIO_FILENAMES).flatMap(([category, filenames]) =>
                 {@const {transcription,partOfSpeech} = getSpecificTranscription(fullName, row.filename)}
                 {#if (
                     (filters.categories.length === 0 || filters.categories.includes(row.category)) &&
-                    (!filters.filename || row.filename.includes(filters.filename)) &&
-                    (!filters.transcription || transcription.includes(filters.transcription)) &&
+                    (!filters.filename || caseInsensitiveSearch(filters.filename, row.filename)) &&
+                    (!filters.transcription || caseInsensitiveSearch(filters.transcription, transcription)) &&
                     (filters.partsOfSpeech.length === 0 || filters.partsOfSpeech.includes(partOfSpeech))
                 )}
                     <tr>
