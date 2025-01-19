@@ -3,6 +3,14 @@
 This tool provides a user-friendly way to browse and experiment with official PIS data taken from
 Freedom of Information requests made to Nexus (Tyne and Wear Transport Executive).
 
+It's worth noting that this data, while official, does not appear to be up to date.
+It seems to be from back when the male announcements were first introduced.
+The route data still says "The next station is" while the 599s actually just say "Next station is" nowadays.
+
+Sadly, it's unlikely we'll ever get more up-to-date data for the 599s, with them being replaced by the 555s.
+However, FoI requests have already been made for some data about the 555s.
+Once Nexus responds to those requests, I will probably add that data to this tool!
+
 ## Pages
 - **All Audio** lists all audio including announcements, audio descriptions and chimes,
   organized by their transcription (so male and female versions of the same announcement are grouped together).
