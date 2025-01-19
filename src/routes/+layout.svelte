@@ -3,8 +3,8 @@
         <slot/>
     </div>
     <footer>
-        This website is open-source. You can view all of it's the code
-        <a href="https://github.com/hopperelec/metro-pis-ui">here</a>.
+        This website is open-source. You can view all of it's the code, report any issues,
+        make suggestions or contribute <a href="https://github.com/hopperelec/metro-pis-ui">here</a>.
         <br>
         <small>
             This website is not affiliated, associated, authorized, endorsed by, or in any way officially connected with
