@@ -1,0 +1,721 @@
+MOP01,Attention.,BOS
+MOP02,Attention please.,BOS
+MOP03,Your attention please.,BOS
+MCY01,Welcome to...,MOS
+MCY02,...apologises for the inconvenience.,EOS
+MCY03,This is metro passenger services with information for passengers on...,MOS
+MCY04,This is metro passenger services with information for passengers at...,MOS
+MCY05,This is metro passenger services with information for all Metro passengers.,EOS
+MCY06_1,Metro wish to apologise for the delay to your...,MOS
+MCY06_2,...Service.,EOS
+MCY07_1,Metro wish to apologise for the delay to your...,MOS
+MCY07_2,...service due to...,MOS
+MCY08,Metro passenger services will make further announcements giving train destinations.,EOS
+MCY09,We apologise for the delay and disruption caused to your journey.,EOS
+MST01,This is...,MOS
+MST02,The station is about to close.,EOS
+MST03,Do not wait on...,MOS
+MST04_1,...is not permitted in any part of the...,MOS
+MST04_2,...railway. Please refrain from...,MOS
+MST04_3,...at all times when on...,MOS
+MST04_4,...premises and trains.,EOS
+MST05_1,Passengers are reminded that...,MOS
+MST05_2,...is not permitted within metro premises. Further information regarding this matter can be obtained using your nearest help point.,EOS
+MST06_1,Passengers are reminded that...,MOS
+MST06_2,...are not permitted within metro premises. Further information regarding this matter can be obtained using your nearest help point.,EOS
+MIF01,Change here for stations to...,MOS
+MIF02,There is an incident in this station.,EOS
+MIF03,There are special season tickets on offer. Please refer to the station notice boards.,EOS
+MIF04,We will give you further information as soon as possible.,EOS
+MIF05,Metro is operating single cars.,EOS
+MIF06,Metro services are reducing to an off peak service.,EOS
+MRI01,Please board the train immediately.,EOS
+MRI02,Please leave the train immediately.,EOS
+MRI03,Please leave the station immediately.,EOS
+MRI04,Please leave the station by the nearest exit.,EOS
+MRI05,Please stay on the train.,EOS
+MRI06,Please wait for the next train.,EOS
+MRI07,Please wait behind the yellow line.,EOS
+MRI08,Please wait in line and allow passengers to exit from the train.,EOS
+MRI09,Please do not wait on the concourse.,EOS
+MRI10,Please use other transport.,EOS
+MRI11_1,Please use other transport for...,MOS
+MRI11_2,...and intermediate stations.,EOS
+MRI12,Please do not leave luggage unattended anywhere in the station. Do not look after luggage for strangers.,EOS
+MRI13,Will the person who pressed the emergency alarm please speak into the microphone and say what the problem is.,EOS
+MRI14,Please press the button again to speak direct to a Metro operator.,EOS
+MTS01_1,The next train to arrive on...,MOS
+MTS01_2,...is for...,MOS
+MTS01_3,...via...,MOS
+MTS02_1,The next train at...,MOS
+MTS02_2,...is for...,MOS
+MTS03_1,The train standing at...,MOS
+MTS03_2,...is for...,MOS
+MTS04,Via...,MOS
+MTS05,All stations to...,MOS
+MTS06_1,All stations to...,MOS
+MTS06_2,...via...,MOS
+MTS07_1,All stations to...,MOS
+MTS07_2,...via...,MOS
+MTS07_3,...and...,MOS
+MTS08_1,All stations to...,MOS
+MTS08_2,...via...,MOS
+MTS08_3,...and...,MOS
+MTS09,This train will not stop at...,MOS
+MTS10_1,The next train at...,MOS
+MTS10_2,...will not stop at this station. Will passengers please stand clear of the platform edge.,EOS
+MTS11_1,The next train at...,MOS
+MTS11_2,...is not in passenger service. Will passengers please stand clear of the platform edge.,EOS
+MTS12,Do not board this train.,EOS
+MTS13_1,The next train at...,MOS
+MTS13_2,...terminates here.,EOS
+MTS14_1,The train at...,MOS
+MTS14_2,...terminates here.,EOS
+MTS15_1,The last train for...,MOS
+MTS15_2,...has already departed.,EOS
+MTS16,The last train from this station has departed.,EOS
+MTS17_1,The last train for...,MOS
+MTS17_2,...is at...,MOS
+MTS18_1,Your previous train for stations towards...,MOS
+MTS18_2,...has been withdrawn from service due to...,MOS
+MTS19_1,Your next train for stations towards...,MOS
+MTS19_2,...is approaching...,MOS
+MTS20_1,Your next train is running approximately...,MOS
+MTS20_2,...minutes late.,EOS
+MTS21,This train is currently approaching...,MOS
+MTS22_1,Due to...,MOS
+MTS22_2,...passengers are advised to board the...,MOS
+MTS22_3,...car only. Your...,MOS
+MTS22_4,...car is out of passenger services due to...,MOS
+MTS23_1,Due to...,MOS
+MTS23_2,...within the...,MOS
+MTS23_3,...we are unable to use...,MOS
+MTS23_4,...Consequently trains for both directions will depart from...,MOS
+MTS23_5,...only. Metro passenger services will make further announcements giving train destinations.,EOS
+MTS24_1,There will be a replacement...,MOS
+MTS24_2,...train immediately behind,EOS
+MTS25,Train service for tonight is ended.,EOS
+MTS26_1,This is...,MOS
+MTS26_2,The next station is...,MOS
+MTS27,There are no more trains this evening on...,MOS
+MTS28_1,The next train for...,MOS
+MTS28_2,...will be in...,MOS
+MTS28_3,...minutes.,EOS
+MTS29,The last train to depart from this platform will be at...,MOS
+MDD01_1,All trains to...,MOS
+MDD01_2,...are subject to delays because of...,MOS
+MDD02_1,All trains from...,MOS
+MDD02_2,...are subject to delays because of...,MOS
+MDD03_1,All trains from...,MOS
+MDD03_2,...are subject to delays because of...,MOS
+MDD04_1,The next train at...,MOS
+MDD04_2,...is subject to a delay because of...,MOS
+MDD05_1,The train at...,MOS
+MDD05_2,...is delayed because of...,MOS
+MDD06_1,The train service has stopped between...,MOS
+MDD06_2,...and...,MOS
+MDD06_3,...because of...,MOS
+MDD07_1,Your next...,MOS
+MDD07_2,...train is currently held at...,MOS
+MDD07_3,...by the emergency services.,EOS
+MDD08,The service will resume as soon as the situation has been given clearance by the emergency services.,EOS
+MDD09,Metro passenger services will keep you updated using the PA. Any further information required can be obtained using your nearest help point.,EOS
+MDD10_1,Due to...,MOS
+MDD10_2,...your Metro service has been temporarily suspended between...,MOS
+MDD10_3,...and...,MOS
+MDD11_1,These delays are currently being caused by...,MOS
+MDD11_2,...at...,MOS
+MDD11_3,Metro staff are trying to rectify the situation. Your next train service for...,MOS
+MDD11_4,...is currently at...,MOS
+MDD12,Due to...,MOS
+MCM01,Please stand clear of the platform edge for your own safety.,EOS
+MCM02,Crowd control procedures are being implemented.,EOS
+MCM03,Please await further information.,EOS
+MEQ01,The ticket machines are not operational. Please buy a ticket at your destination.,EOS
+MEQ02_1,The ticket machines on...,MOS
+MEQ02_2,...are not operational. Please buy a ticket from...,MOS
+MEQ03_1,The lifts at...,MOS
+MEQ03_2,...are not operational due to...,MOS
+MEQ03_3,Passengers wishing to use lifts should alight at...,MOS
+MEQ04_1,The...,MOS
+MEQ04_2,...is not operational on...,MOS
+MEQ04_3,Please use the...,MOS
+MEQ04_4,...on...,MOS
+MEQ05_1,The...,MOS
+MEQ05_2,...are not operational on...,MOS
+MEQ05_3,Please use the...,MOS
+MEQ05_4,...on...,MOS
+MEQ06_1,In...,MOS
+MEQ06_2,...minutes we will test the fire alarm system.,EOS
+MEQ07,We are testing the fire alarm system. Please continue with your journey.,EOS
+MEQ08_1,Due to maintenance your lift at...,MOS
+MEQ08_2,...is out of passenger use until...,MOS
+MEQ08_3,...the...,MOS
+MEQ08_4,Therefore would passengers requiring the use of a lift please use...,MOS
+MEQ09_1,Due to station improvement construction work your lift at...,MOS
+MEQ09_2,...is out of passenger use until...,MOS
+MEQ09_3,...the...,MOS
+MEQ09_4,Therefore would passengers requiring the use of a lift please use...,MOS
+MEQ10_1,Due to maintenance your lift at...,MOS
+MEQ10_2,...is out of passenger use until...,MOS
+MEQ10_3,Therefore would passengers requiring the use of a lift please use...,MOS
+MEQ11_1,Due to station improvement construction work your lift at...,MOS
+MEQ11_2,...is out of passenger use until...,MOS
+MEQ11_3,Therefore would passengers requiring the use of a lift please use...,MOS
+MSD01_1,This station closes in...,MOS
+MSD01_2,...minutes,EOS
+MSD02_1,The last train to...,MOS
+MSD02_2,...is due in...,MOS
+MSD02_3,...minutes,EOS
+MSD03_1,Trains to...,MOS
+MSD03_2,...will now run every...,MOS
+MSD03_3,...minutes,EOS
+MSD04_1,Trains from...,MOS
+MSD04_2,...will now run every...,MOS
+MSD04_3,...minutes,EOS
+MSD05_1,Trains from this station will now run every...,MOS
+MSD05_2,...minutes,EOS
+MAB01,...staff will direct you to the replacement bus service,EOS
+MAB02,A replacement bus service has been ordered,EOS
+MAB03,A replacement bus service is in operation,EOS
+MAB04_1,"We are currently operating a replacement bus service, the number...",MOS
+MAB04_2,...which will operate between...,MOS
+MAB04_3,...and...,MOS
+MAW01_1,There is...,MOS
+MAW01_2,...in the...,MOS
+MAW01_3,...area. Trains beyond...,MOS
+MAW01_4,...are cancelled.,EOS
+MSE01_1,The...,MOS
+MSE01_2,...staff wish all passengers a happy...,MOS
+PHIN01_N,A technical fault on the train,MOS
+PHIN01_E,A technical fault on the train,EOS
+PHIN02_N,A signalling fault,MOS
+PHIN02_E,A signalling fault,EOS
+PHIN03_N,A problem with the power supply,MOS
+PHIN03_E,A problem with the power supply,EOS
+PHIN04_N,Someone on the track,MOS
+PHIN04_E,Someone on the track,EOS
+PHIN05_N,A station fire,MOS
+PHIN05_E,A station fire,EOS
+PHIN06_N,A tunnel fire,MOS
+PHIN06_E,A tunnel fire,EOS
+PHIN07_N,A track-side fire,MOS
+PHIN07_E,A track-side fire,EOS
+PHIN08_N,Police action,MOS
+PHIN08_E,Police action,EOS
+PHIN09_N,An ambulance attending,MOS
+PHIN09_E,An ambulance attending,EOS
+PHIN10_N,A technical fault,MOS
+PHIN10_E,A technical fault,EOS
+PHIN11_N,Operational reasons,MOS
+PHIN11_E,Operational reasons,EOS
+PHIN12_N,Vandalism,MOS
+PHIN12_E,Vandalism,EOS
+PHWE01_N,Flooding,MOS
+PHWE02_N,High winds,MOS
+PHWE03_N,Ice,MOS
+PHWE04_N,Snow,MOS
+PHWE05_N,Risk of lightning,MOS
+PHSN01_N,The coast,MOS
+PHSN01_E,The coast,EOS
+PHSN02_N,Airport,MOS
+PHSN02_E,Airport,EOS
+PHSN03_N,Callerton Parkway,MOS
+PHSN03_E,Callerton Parkway,EOS
+PHSN04_N,Bank Foot,MOS
+PHSN04_E,Bank Foot,EOS
+PHSN05_N,Kingston Park,MOS
+PHSN05_E,Kingston Park,EOS
+PHSN06_N,Fawdon,MOS
+PHSN06_E,Fawdon,EOS
+PHSN07_N,Wansbeck Road,MOS
+PHSN07_E,Wansbeck Road,EOS
+PHSN08_N,Regent Centre,MOS
+PHSN08_E,Regent Centre,EOS
+PHSN09_N,South Gosforth,MOS
+PHSN09_E,South Gosforth,EOS
+PHSN10_N,Ilford Road,MOS
+PHSN10_E,Ilford Road,EOS
+PHSN11_N,West Jesmond,MOS
+PHSN11_E,West Jesmond,EOS
+PHSN12_N,Jesmond,MOS
+PHSN12_E,Jesmond,EOS
+PHSN13_N,Haymarket,MOS
+PHSN13_E,Haymarket,EOS
+PHSN14_N,Monument,MOS
+PHSN14_E,Monument,EOS
+PHSN15_N,Central Station,MOS
+PHSN15_E,Central Station,EOS
+PHSN16_N,Gateshead,MOS
+PHSN16_E,Gateshead,EOS
+PHSN17_N,Gateshead Stadium,MOS
+PHSN17_E,Gateshead Stadium,EOS
+PHSN18_N,Felling,MOS
+PHSN18_E,Felling,EOS
+PHSN19_N,Heworth,MOS
+PHSN19_E,Heworth,EOS
+PHSN20_N,Pelaw,MOS
+PHSN20_E,Pelaw,EOS
+PHSN21_N,Hebburn,MOS
+PHSN21_E,Hebburn,EOS
+PHSN22_N,Jarrow,MOS
+PHSN22_E,Jarrow,EOS
+PHSN23_N,Bede,MOS
+PHSN23_E,Bede,EOS
+PHSN24_N,Tyne Dock,MOS
+PHSN24_E,Tyne Dock,EOS
+PHSN25_N,Chichester,MOS
+PHSN25_E,Chichester,EOS
+PHSN26_N,South Shields,MOS
+PHSN26_E,South Shields,EOS
+PHSN27_N,St James,MOS
+PHSN27_E,St James,EOS
+PHSN28_N,Manors,MOS
+PHSN28_E,Manors,EOS
+PHSN29_N,Byker,MOS
+PHSN29_E,Byker,EOS
+PHSN30_N,Chillingham Road,MOS
+PHSN30_E,Chillingham Road,EOS
+PHSN31_N,Walkergate,MOS
+PHSN31_E,Walkergate,EOS
+PHSN32_N,Wallsend,MOS
+PHSN32_E,Wallsend,EOS
+PHSN33_N,Hadrian Road,MOS
+PHSN33_E,Hadrian Road,EOS
+PHSN34_N,Howdon,MOS
+PHSN34_E,Howdon,EOS
+PHSN35_N,Percy Main,MOS
+PHSN35_E,Percy Main,EOS
+PHSN36_N,Meadow Well,MOS
+PHSN36_E,Meadow Well,EOS
+PHSN37_N,North Shields,MOS
+PHSN37_E,North Shields,EOS
+PHSN38_N,Tynemouth,MOS
+PHSN38_E,Tynemouth,EOS
+PHSN39_N,Cullercoats,MOS
+PHSN39_E,Cullercoats,EOS
+PHSN40_N,Whitley Bay,MOS
+PHSN40_E,Whitley Bay,EOS
+PHSN41_N,Monkseaton,MOS
+PHSN41_E,Monkseaton,EOS
+PHSN42_N,West Monkseaton,MOS
+PHSN42_E,West Monkseaton,EOS
+PHSN43_N,Shiremoor,MOS
+PHSN43_E,Shiremoor,EOS
+PHSN44_N,Palmersville,MOS
+PHSN44_E,Palmersville,EOS
+PHSN45_N,Benton,MOS
+PHSN45_E,Benton,EOS
+PHSN46_N,Four Lane Ends,MOS
+PHSN46_E,Four Lane Ends,EOS
+PHSN47_N,Longbenton,MOS
+PHSN47_E,Longbenton,EOS
+PHSN48_N,Fellgate,MOS
+PHSN48_E,Fellgate,EOS
+PHSN49_N,Brockley Whins,MOS
+PHSN49_E,Brockley Whins,EOS
+PHSN50_N,East Bolden,MOS
+PHSN50_E,East Bolden,EOS
+PHSN51_N,Seaburn,MOS
+PHSN51_E,Seaburn,EOS
+PHSN52_N,Stadium of Light,MOS
+PHSN52_E,Stadium of Light,EOS
+PHSN53_N,St. Peters,MOS
+PHSN53_E,St. Peters,EOS
+PHSN54_N,Sunderland,MOS
+PHSN54_E,Sunderland,EOS
+PHSN55_N,Park Lane,MOS
+PHSN55_E,Park Lane,EOS
+PHSN56_N,University,MOS
+PHSN56_E,University,EOS
+PHSN57_N,Millfield,MOS
+PHSN57_E,Millfield,EOS
+PHSN58_N,Pallion,MOS
+PHSN58_E,Pallion,EOS
+PHSN59_N,South Hylton,MOS
+PHSN59_E,South Hylton,EOS
+PHSN60_N,Backworth - Actually Recorded as 'Northumberland Park',MOS
+PHSN60_E,Backworth - Actually Recorded as 'Northumberland Park',EOS
+PHSN61_N,Simonside,MOS
+PHSN61_E,Simonside,EOS
+PHSN62_N,High Lane Row,MOS
+PHSN62_E,High Lane Row,EOS
+PHNU01,First - Used N inflection,EOS
+PHNU02,Second - Used N inflection,EOS
+PHNU03,Third - Used N inflection,EOS
+PHNU04,Fourth - Used N inflection,EOS
+PHNU05,Fifth - Used N inflection,EOS
+PHNU06,Sixth - Used N inflection,EOS
+PHNU07,Seventh - Used N inflection,EOS
+PHNU08,Eighth - Used N inflection,EOS
+PHNU09,Ninth - Used N inflection,EOS
+PHNU10,Tenth - Used N inflection,EOS
+PHNU11,Eleventh - Used N inflection,EOS
+PHNU12,Twelfth - Used N inflection,EOS
+PHNU13,Thirteenth,EOS
+PHNU14,Fourteenth,EOS
+PHNU15,Fifteenth,EOS
+PHNU16,Sixteenth,EOS
+PHNU17,Seventeenth,EOS
+PHNU18,Eighteenth,EOS
+PHNU19,Nineteenth,EOS
+PHNU20,Twentieth,EOS
+PHNU21,Twenty first,EOS
+PHNU22,Twenty second,EOS
+PHNU23,Twenty third,EOS
+PHNU24,Twenty fourth,EOS
+PHNU25,Twenty fifth,EOS
+PHNU26,Twenty sixth,EOS
+PHNU27,Twenty seventh,EOS
+PHNU28,Twenty eighth,EOS
+PHNU29,Twenty ninth,EOS
+PHNU30,Thirtieth,EOS
+PHNU31,Thirty First,EOS
+PHNM01_N,One,MOS
+PHNM01_E,One,EOS
+PHNM02_N,Two,MOS
+PHNM02_E,Two,EOS
+PHNM03_N,Three,MOS
+PHNM03_E,Three,EOS
+PHNM04_N,Four,MOS
+PHNM04_E,Four,EOS
+PHNM05_N,Five,MOS
+PHNM05_E,Five,EOS
+PHNM06_N,Six,MOS
+PHNM06_E,Six,EOS
+PHNM07_N,Seven,MOS
+PHNM07_E,Seven,EOS
+PHNM08_N,Eight,MOS
+PHNM08_E,Eight,EOS
+PHNM09_N,Nine,MOS
+PHNM09_E,Nine,EOS
+PHNM10_N,Ten,MOS
+PHNM10_E,Ten,EOS
+PHNM11_N,Eleven,MOS
+PHNM11_E,Eleven,EOS
+PHNM12_N,Twelve,MOS
+PHNM12_E,Twelve,EOS
+PHNM13_N,Thirteen,MOS
+PHNM13_E,Thirteen,EOS
+PHNM14_N,Fourteen,MOS
+PHNM14_E,Fourteen,EOS
+PHNM15_N,Fifteen,MOS
+PHNM15_E,Fifteen,EOS
+PHNM16_N,Sixteen,MOS
+PHNM16_E,Sixteen,EOS
+PHNM17_N,Seventeen,MOS
+PHNM17_E,Seventeen,EOS
+PHNM18_N,Eighteen,MOS
+PHNM18_E,Eighteen,EOS
+PHNM19_N,Nineteen,MOS
+PHNM19_E,Nineteen,EOS
+PHNM20_N,Twenty,MOS
+PHNM20_E,Twenty,EOS
+PHNM21_N,Twenty one,MOS
+PHNM21_E,Twenty one,EOS
+PHNM22_N,Twenty two,MOS
+PHNM22_E,Twenty two,EOS
+PHNM23_N,Twenty three,MOS
+PHNM23_E,Twenty three,EOS
+PHNM24_N,Twenty four,MOS
+PHNM24_E,Twenty four,EOS
+PHNM25_N,Twenty five,MOS
+PHNM25_E,Twenty five,EOS
+PHNM26_N,Twenty six,MOS
+PHNM26_E,Twenty six,EOS
+PHNM27_N,Twenty seven,MOS
+PHNM27_E,Twenty seven,EOS
+PHNM28_N,Twenty eight,MOS
+PHNM28_E,Twenty eight,EOS
+PHNM29_N,Twenty nine,MOS
+PHNM29_E,Twenty nine,EOS
+PHNM30_N,Thirty,MOS
+PHNM30_E,Thirty,EOS
+PHNM31_N,Thirty one,MOS
+PHNM31_E,Thirty one,EOS
+PHNM32_N,Thirty two,MOS
+PHNM32_E,Thirty two,EOS
+PHNM33_N,Thirty three,MOS
+PHNM33_E,Thirty three,EOS
+PHNM34_N,Thirty four,MOS
+PHNM34_E,Thirty four,EOS
+PHNM35_N,Thirty five,MOS
+PHNM35_E,Thirty five,EOS
+PHNM36_N,Thirty six,MOS
+PHNM36_E,Thirty six,EOS
+PHNM37_N,Thirty seven,MOS
+PHNM37_E,Thirty seven,EOS
+PHNM38_N,Thirty eight,MOS
+PHNM38_E,Thirty eight,EOS
+PHNM39_N,Thirty nine,MOS
+PHNM39_E,Thirty nine,EOS
+PHNM40_N,Forty,MOS
+PHNM40_E,Forty,EOS
+PHNM41_N,Forty one,MOS
+PHNM41_E,Forty one,EOS
+PHNM42_N,Forty two,MOS
+PHNM42_E,Forty two,EOS
+PHNM43_N,Forty three,MOS
+PHNM43_E,Forty three,EOS
+PHNM44_N,Forty four,MOS
+PHNM44_E,Forty four,EOS
+PHNM45_N,Forty five,MOS
+PHNM45_E,Forty five,EOS
+PHNM46_N,Forty six,MOS
+PHNM46_E,Forty six,EOS
+PHNM47_N,Forty seven,MOS
+PHNM47_E,Forty seven,EOS
+PHNM48_N,Forty eight,MOS
+PHNM48_E,Forty eight,EOS
+PHNM49_N,Forty nine,MOS
+PHNM49_E,Forty nine,EOS
+PHNM50_N,Fifty,MOS
+PHNM50_E,Fifty,EOS
+PHNM51_N,Fifty one,MOS
+PHNM51_E,Fifty one,EOS
+PHNM52_N,Fifty two,MOS
+PHNM52_E,Fifty two,EOS
+PHNM53_N,Fifty three,MOS
+PHNM53_E,Fifty three,EOS
+PHNM54_N,Fifty four,MOS
+PHNM54_E,Fifty four,EOS
+PHNM55_N,Fifty five,MOS
+PHNM55_E,Fifty five,EOS
+PHNM56_N,Fifty six,MOS
+PHNM56_E,Fifty six,EOS
+PHNM57_N,Fifty seven,MOS
+PHNM57_E,Fifty seven,EOS
+PHNM58_N,Fifty eight,MOS
+PHNM58_E,Fifty eight,EOS
+PHNM59_N,Fifty nine,MOS
+PHNM59_E,Fifty nine,EOS
+PHNM60_N,Sixty,MOS
+PHNM60_E,Sixty,EOS
+PHNM61_N,oh one,MOS
+PHNM61_E,oh one,EOS
+PHNM62_N,oh two,MOS
+PHNM62_E,oh two,EOS
+PHNM63_N,oh three,MOS
+PHNM63_E,oh three,EOS
+PHNM64_N,oh four,MOS
+PHNM64_E,oh four,EOS
+PHNM65_N,oh five,MOS
+PHNM65_E,oh five,EOS
+PHNM66_N,oh six,MOS
+PHNM66_E,oh six,EOS
+PHNM67_N,oh seven,MOS
+PHNM67_E,oh seven,EOS
+PHNM68_N,oh eight,MOS
+PHNM68_E,oh eight,EOS
+PHNM69_N,oh nine,MOS
+PHNM69_E,oh nine,EOS
+PHNM70_E,hundred hours,EOS
+PHBN01_N,900 (nine hundred),MOS
+PHBN02_N,901 (nine oh one),MOS
+PHBN03_N,902 (nine oh two),MOS
+PHBN04_N,903 (nine oh three),MOS
+PHBN05_N,904 (nine oh four),MOS
+PHHO01_E,Easter,EOS
+PHHO02_E,Christmas,EOS
+PHHO03_E,Bank holiday,EOS
+PHHO04_E,New Year,EOS
+PHMN01_N,January,MOS
+PHMN02_N,February,MOS
+PHMN03_N,March,MOS
+PHMN04_N,April,MOS
+PHMN05_N,May,MOS
+PHMN06_N,June,MOS
+PHMN07_N,July,MOS
+PHMN08_N,August,MOS
+PHMN09_N,September,MOS
+PHMN10_N,October,MOS
+PHMN11_N,November,MOS
+PHMN12_N,December,MOS
+PHTD01_E,Sunday,EOS
+PHTD02_E,Monday,EOS
+PHTD03_E,Tuesday,EOS
+PHTD04_E,Wednesday,EOS
+PHTD05_E,Thursday,EOS
+PHTD06_E,Friday,EOS
+PHTD07_E,Saturday,EOS
+PHTD08_E,The Weekend,EOS
+PHTD09_E,Next Week,EOS
+PHNO01_N,Platform One,MOS
+PHNO01_E,Platform One,EOS
+PHNO02_N,Platform Two,MOS
+PHNO02_E,Platform Two,EOS
+PHNO03_N,Platform Three,MOS
+PHNO03_E,Platform Three,EOS
+PHNO04_N,Platform Four,MOS
+PHNO04_E,Platform Four,EOS
+PHNO05_N,Platforms One and Two,MOS
+PHNO05_E,Platforms One and Two,EOS
+PHNO06_N,Platforms Three and Four,MOS
+PHNO06_E,Platforms Three and Four,EOS
+PHPE01_N,Bikes,MOS
+PHPE02_N,Skates,MOS
+PHPE03_N,Scooters,MOS
+PHPE04_N,Skate Boards,MOS
+PHPE05_N,Alcohol,MOS
+PHPH01_N,Smoking,MOS
+PHPH02_N,Cycling,MOS
+PHPH03_N,Leaving unattended luggage,MOS
+PHPH04_N,Drinking,MOS
+PHPH05_N,Spitting,MOS
+PHPH06_N,Skating,MOS
+PHLF01_N,Escalator,MOS
+PHLF02_N,Escalators,MOS
+PHLF03_N,Lift,MOS
+PHLF04_N,Lifts,MOS
+PHRW01_N,Metro,MOS
+PHRW01_E,Metro,EOS
+PHCM01,"Normal Chime (""bing bong"" or similar)",
+PHCM02,Warning Chime (longer and more urgent),
+PAUSE1,400ms blank recording,
+PAUSE2,1 second blank recording,
+S2_1B,Newcastle...,BOS
+S2_1M,...Newcastle...,MOS
+S2_1E,...Newcastle.,EOS
+S2_3,This is a test message for the Metro Public address system.  This system is provided for your safety and convenience,EOS
+S2_4M,...thank you...,MOS
+S2_4E,...thank you.,EOS
+S2_5,delays to service through,MOS
+S2_6B,AM...,BOS
+S2_6E,...AM.,EOS
+S2_8B,PM,BOS
+S2_8E,PM,EOS
+S2_10B,Front...,BOS
+S2_10E,...front.,EOS
+S2_12B,Rear...,BOS
+S2_12E,...rear.,EOS
+S2_14,...on...,MOS
+S2_15,...until...,MOS
+S2_16,...until approximately...,MOS
+S2_17,...the next train on...,MOS
+S2_18,...has only the...,MOS
+S2_19,...car in operation...,MOS
+S2_19_ALT,...cars in operation...,MOS
+S2_20M,...in both directions...,MOS
+S2_20E,...in both direction.,EOS
+S2_21,...an incident on Network Rail...,MOS
+S2_22,...an incident on Network Rail.,EOS
+S2_23M,...overhead line problems...,MOS
+S2_23E,...overhead line problems.,EOS
+S2_25M,...points failure...,MOS
+S2_25E,...points failure.,EOS
+S2_27M,...emergency services attending...,MOS
+S2_27E,...emergency services attending.,EOS
+S2_29M,...essential maintenance work being carried out...,MOS
+S2_29E,...essential maintenance work being carried out.,EOS
+S2_31M,...essential engineering work being carried out...,MOS
+S2_31E,...essential engineering work being carried out.,EOS
+S2_33M,...security alert...,MOS
+S2_33E,...security alert.,EOS
+S2_35M,...fire brigade attending...,MOS
+S2_35E,...fire brigade attending.,EOS
+S2_37M,...drinking alcohol...,MOS
+S2_37E,...drinking alcohol.,EOS
+S3_1,This train terminates at...,BOS
+S3_2,This train is for...,BOS
+S3_3,All stations to...,BOS
+S3_3M,...all stations to...,MOS
+S3_4,The next station...,BOS
+S3_4E,...the next station.,EOS
+S3_4E_ALT,...the next station.,EOS
+S3_5,...is...,MOS
+S3_6,This station is for...,BOS
+S3_7,All stations to...,BOS
+S3_7E,...all stations to...,MOS
+S3_8,All local...,BOS
+S3_8E,...all local.,EOS
+S3_9,...bus services...,MOS
+S3_9E,...bus services.,EOS
+S3_10,Change here for...,BOS
+S3_11,Trains to...,BOS
+S3_11M,...trains to...,MOS
+S3_12,...from...,MOS
+S3_12_ALT,...from...,MOS
+S3_13,This station...,BOS
+S3_13M,...this station...,MOS
+S3_13E,...this station.,EOS
+S3_14B,Newcastle...,BOS
+S3_14M,...Newcastle...,MOS
+S3_14E,...Newcastle.,EOS
+S3_15B,City centre...,BOS
+S3_15M,...city centre...,MOS
+S3_15E,...city centre.,EOS
+S3_16B,Trains to...,BOS
+S3_16M,...trains to...,MOS
+S3_17B,Mainline...,BOS
+S3_17M,...mainline...,MOS
+S3_17E,...mainline.,EOS
+S3_18,...and the...,MOS
+S3_19B,Regional rail services...,BOS
+S3_19M,...regional rail services...,MOS
+S3_19E,...regional rail services.,EOS
+S3_20,This train terminates here.,EOS
+S3_21B,Regional and national bus services...,BOS
+S3_21E,...regional and national bus services.,EOS
+S3_22B,Local bus...,BOS
+S3_22M,...local bus...,MOS
+S3_22E,...local bus.,EOS
+S3_23B,City centre...,BOS
+S3_23M,...city centre...,MOS
+S3_23E,...city centre.,EOS
+S3_24,All...,BOS
+S3_24_ALT,...all...,MOS
+S3_25,...and...,MOS
+S3_26B,Station...,BOS
+S3_26M,...station...,MOS
+S3_26E,...station.,EOS
+S3_27,The...,BOS
+S3_27_ALT,...the...,MOS
+S3_28,...is for...,MOS
+S3_29,...for...,MOS
+S3_30B,The coast...,BOS
+S3_30M,...the coast...,MOS
+S3_30E,...the coast.,EOS
+S3_31B,Northumberland Park...,BOS
+S3_31M,...Northumberland Park...,MOS
+S3_31E,...Northumberland Park.,EOS
+S3_32M,...doors closing...,MOS
+S3_32E,...doors closing.,EOS
+S3_33M,...stand clear of the doors...,MOS
+S3_33E,...stand clear of the doors.,EOS
+S3_34,Please mind the gap when alighting at this station.,EOS
+S3_35,Please mind the gap when boarding the train.,EOS
+S3_36,Please mind the gap between the train and the platform when exiting the train.,EOS
+S3_37,Please mind the gap between the train and the platform when boarding the train.,EOS
+S3_38,This stop is for...,BOS
+S3_38_ALT,This stop is for...,BOS
+S3_39,The lift at...,BOS
+S3_40B,Doors Closing...,BOS
+S3_40E,...Doors Closing.,EOS
+S3_41,"...is out of service, please use the lift at... ",MOS
+S3_42B,Simonside...,BOS
+S3_42M,...Simonside...,MOS
+S3_42E,...Simonside.,EOS
+S3_43,...is out of service.,EOS
+S3_44,Please use the lift at...,BOS
+S3_45,Please take extra care when using the level crossing,BOS
+S3_46,...local bus services.,EOS
+S3_47,...trains to St James via Whitley Bay from platform,EOS
+S3_48,...for City Centre shopping and local bus services.,EOS
+S3_49,...for Newcastle City Centre,EOS
+S3_50,"...St James and Whitley Bay, and for local bus services",EOS
+S3_51,"... local and national rail, and local bus services.",EOS
+S3_52,...local rail and bus services.,EOS
+S3_53,...trains to South Shields from platform 1.,MOS
+S3_54,...for Sunderland City Centre,MOS
+S3_55,"South Shields, South Hylton, Airport and Whitley Bay via Four Lane Ends, and local bus services",EOS
+S3_56,"...for Cobalt Business Park, Silverlink retail and local bus services.",EOS
+S3_57,"...trains to Whitley Bay via Wallsend, St James, and local bus services",EOS
+S3_58,...trains to South Hylton and Park Lane from platform 1.,MOS
+S3_59,...for the National Glass Centre and riverside.,EOS
+S3_60,Next station is...,BOS
+S3_61,"...for city centre shops, local and national rail services and local bus services.",EOS
+S3_62,...for city centre shops and local bus services.,EOS
+S3_63,...for local buses to Colbalt Business Park and Silverlink retail.,EOS
+S3_64,Please take care if using the level crossing.,BOS
+PAUSE3,300ms blank recording,
+PAUSE4,500ms blank recording,

@@ -1,0 +1,8 @@
+/node_modules/
+/build/
+/.svelte-kit/
+/.vercel/
+/.idea/
+/vite.config.ts.timestamp-*.mjs
+/.env
+/static/audio/

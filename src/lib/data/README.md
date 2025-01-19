@@ -1,0 +1,1 @@
+Based on data from "Master Station Index 2.xls" sourced from [this WhatDoTheyKnow FoI request](https://www.whatdotheyknow.com/request/tyne_wear_metro_automated_announ)

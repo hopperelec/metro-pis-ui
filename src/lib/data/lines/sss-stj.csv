@@ -1,0 +1,229 @@
+01,SSS,,"S3_2,S3_3M,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Newcastle.  The next station is Chichester
+03,SSS,,"S3_2,S3_3M,PHSN08_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Regent Centre via Newcastle.  The next station is Chichester
+04,SSS,,"S3_2,S3_3M,PHSN20_E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Pelaw.  The next station is Chichester
+05,SSS,,"S3_2,S3_3M,PHSN45_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Benton via Newcastle.  The next station is Chichester
+06,SSS,,"S3_2,S3_3M,PHSN37_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to North Shields via Newcastle.  The next station is Chichester
+07,SSS,,"S3_2,S3_3M,PHSN27_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to St James via Newcastle.  The next station is Chichester
+10,SSS,,"S3_2,S3_3M,PHSN13_N,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Haymarket.  The next station is Chichester
+14,SSS,,"S3_2,S3_3M,PHSN19_E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Heworth.  The next station is Chichester
+16,SSS,,"S3_2,S3_3M,PHSN32_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Wallsend via Newcastle.  The next station is Chichester
+17,SSS,,"S3_2,S3_3M,PHSN28_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Manors via Newcastle.  The next station is Chichester
+20,SSS,,"S3_2,S3_3M,PHSN14_N,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Monument.  The next station is Chichester
+21,SSS,,"S3_2,S3_3M,PHSN14_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Monument via Newcastle.  The next station is Chichester
+26,SSS,,"S3_2,S3_3M,PHSN38_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to Tynemouth via Newcastle.  The next station is Chichester
+31,SSS,,"S3_2,S3_3M,PHSN09_N,MTS07_2,S2_1E,PAUSE1,MTS26_2,PHSN25_E",,This train is for all stations to South Gosforth via Newcastle.  The next station is Chichester
+02,CHI,"MST01,PHSN25_E","MTS26_2,PHSN24_E",This is<>Chichester,The next station is Tyne Dock
+04,CHI,"MST01,PHSN25_E","MTS26_2,PHSN24_E",This is<>Chichester,The next station is Tyne Dock
+14,CHI,"MST01,PHSN25_E","MTS26_2,PHSN24_E",This is<>Chichester,The next station is Tyne Dock
+02,TDK,"MST01,PHSN24_E","MTS26_2,PHSN61_E",This is<>Tyne Dock,The next station is Simonside
+04,TDK,"MST01,PHSN24_E","MTS26_2,PHSN61_E",This is<>Tyne Dock,The next station is Simonside
+14,TDK,"MST01,PHSN24_E","MTS26_2,PHSN61_E",This is<>Tyne Dock,The next station is Simonside
+02,SMD,"MST01,PHSN61_E","MTS26_2,PHSN23_E",This is<>Simonside,The next station is Bede
+04,SMD,"MST01,PHSN61_E","MTS26_2,PHSN23_E",This is<>Simonside,The next station is Bede
+14,SMD,"MST01,PHSN61_E","MTS26_2,PHSN23_E",This is<>Simonside,The next station is Bede
+02,BDE,"MST01,PHSN23_E","MTS26_2,PHSN22_E,PAUSE1,S3_10,S3_46",This is<>Bede,"The next station is Jarrow, change here for local bus services. "
+04,BDE,"MST01,PHSN23_E","MTS26_2,PHSN22_E,PAUSE1,S3_10,S3_46",This is<>Bede,"The next station is Jarrow, change here for local bus services. "
+14,BDE,"MST01,PHSN23_E","MTS26_2,PHSN22_E,PAUSE1,S3_10,S3_46",This is<>Bede,"The next station is Jarrow, change here for local bus services. "
+02,JAR,"MST01,PHSN22_E","MTS26_2,PHSN21_E",This is<>Jarrow,The next station is Hebburn
+04,JAR,"MST01,PHSN22_E","MTS26_2,PHSN21_E",This is<>Jarrow,The next station is Hebburn
+14,JAR,"MST01,PHSN22_E","MTS26_2,PHSN21_E",This is<>Jarrow,The next station is Hebburn
+02,HEB,"MST01,PHSN21_E","MTS26_2,PHSN20_E,PAUSE1,S3_10,S3_58",This is<>Hebburn,"The next station is Pelaw, change here for trains to South Hylton and Park Lane from platform 1. "
+04,HEB,"MST01,PHSN21_E","S3_1,S3_4E,PAUSE1,PHSN20_E,PAUSE1,S3_10,S3_58",This is<>Hebburn,"This train terminates at the next station, Pelaw.  Change here for trains to South Hylton and Park Lane from platform 1. "
+14,HEB,"MST01,PHSN21_E","MTS26_2,PHSN20_E,PAUSE1,S3_10,S3_58",This is<>Hebburn,"The next station is Pelaw, change here for trains to South Hylton and Park Lane from platform 1. "
+01,PLW,"MST01,PHSN20_E","S3_2,S3_3M,S2_1E,PAUSE1,MTS26_2,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train is for all stations to Newcastle. The next station is Heworth, change here for local rail and bus services."
+03,PLW,"MST01,PHSN20_E","S3_2,S3_3M,PHSN08_N,MTS01_3,S3_14E,PAUSE1,MTS26_2,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train is for all stations to Regent Centre via Newcastle. The next station is Heworth, change here for local rail and bus services."
+04,PLW,"MST01,PHSN20_E,PAUSE1,S3_20",,"This is Pelaw, this train terminates here",
+05,PLW,"MST01,PHSN20_E","S3_2,S3_3M,PHSN45_N,MTS01_3,S3_14E,PAUSE1,MTS26_2,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train is for all stations to Benton via Newcastle. The next station is Heworth, change here for local rail and bus services."
+06,PLW,"MST01,PHSN20_E","S3_2,S3_3M,PHSN37_N,MTS01_3,S3_14E,PAUSE1,MTS26_2,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train is for all stations to North Shields via Newcastle. The next station is Heworth, change here for local rail and bus services."
+10,PLW,"MST01,PHSN20_E","S3_2,S3_3M,PHSN13_N,PAUSE1,MTS26_2,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train is for all stations to Haymarket. The next station is Heworth, change here for local rail and bus services."
+14,PLW,"MST01,PHSN20_E","S3_1,S3_4E,PAUSE1,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train terminates at the next station, Heworth.  Change here for local rail and bus services."
+20,PLW,"MST01,PHSN20_E","S3_2,S3_3M,PHSN14_N,PAUSE1,MTS26_2,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train is for all stations to Monument. The next station is Heworth, change here for local rail and bus services."
+25,PLW,"MST01,PHSN20_E","S3_2,S3_3M,PHSN41_N,MTS01_3,S3_14E,PAUSE1,MTS26_2,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train is for all stations to Monkseaton via Newcastle. The next station is Heworth, change here for local rail and bus services."
+31,PLW,"MST01,PHSN20_E","S3_2,S3_3M,PHSN09_N,MTS01_3,S3_14E,PAUSE1,MTS26_2,PHSN19_E,PAUSE1,S3_10,S3_52",This is<>Pelaw,"This train is for all stations to South Gosforth via Newcastle. The next station is Heworth, change here for local rail and bus services."
+01,HTH,"MST01,PHSN19_E","MTS26_2,PHSN18_E",This is<>Heworth,The next station is Felling
+03,HTH,"MST01,PHSN19_E","MTS26_2,PHSN18_E",This is<>Heworth,The next station is Felling
+05,HTH,"MST01,PHSN19_E","MTS26_2,PHSN18_E",This is<>Heworth,The next station is Felling
+06,HTH,"MST01,PHSN19_E","MTS26_2,PHSN18_E",This is<>Heworth,The next station is Felling
+10,HTH,"MST01,PHSN19_E","MTS26_2,PHSN18_E",This is<>Heworth,The next station is Felling
+14,HTH,"MST01,PHSN19_E,PAUSE1,S3_20",,"This is Heworth, this train terminates here.",
+20,HTH,"MST01,PHSN19_E","MTS26_2,PHSN18_E",This is<>Heworth,The next station is Felling
+25,HTH,"MST01,PHSN19_E","MTS26_2,PHSN18_E",This is<>Heworth,The next station is Felling
+01,FEL,"MST01,PHSN18_E","MTS26_2,PHSN17_E",This is<>Felling,The next station is Gateshead Stadium
+03,FEL,"MST01,PHSN18_E","MTS26_2,PHSN17_E",This is<>Felling,The next station is Gateshead Stadium
+05,FEL,"MST01,PHSN18_E","MTS26_2,PHSN17_E",This is<>Felling,The next station is Gateshead Stadium
+06,FEL,"MST01,PHSN18_E","MTS26_2,PHSN17_E",This is<>Felling,The next station is Gateshead Stadium
+10,FEL,"MST01,PHSN18_E","MTS26_2,PHSN17_E",This is<>Felling,The next station is Gateshead Stadium
+20,FEL,"MST01,PHSN18_E","MTS26_2,PHSN17_E",This is<>Felling,The next station is Gateshead Stadium
+25,FEL,"MST01,PHSN18_E","MTS26_2,PHSN17_E",This is<>Felling,The next station is Gateshead Stadium
+01,GST,"MST01,PHSN17_E","MTS26_2,PHSN16_E,PAUSE1,S3_10,S3_46",This is<>Gateshead Stadium,"The next station is Gateshead, change here for local bus services"
+03,GST,"MST01,PHSN17_E","MTS26_2,PHSN16_E,PAUSE1,S3_10,S3_46",This is<>Gateshead Stadium,"The next station is Gateshead, change here for local bus services"
+05,GST,"MST01,PHSN17_E","MTS26_2,PHSN16_E,PAUSE1,S3_10,S3_46",This is<>Gateshead Stadium,"The next station is Gateshead, change here for local bus services"
+06,GST,"MST01,PHSN17_E","MTS26_2,PHSN16_E,PAUSE1,S3_10,S3_46",This is<>Gateshead Stadium,"The next station is Gateshead, change here for local bus services"
+10,GST,"MST01,PHSN17_E","MTS26_2,PHSN16_E,PAUSE1,S3_10,S3_46",This is<>Gateshead Stadium,"The next station is Gateshead, change here for local bus services"
+20,GST,"MST01,PHSN17_E","MTS26_2,PHSN16_E,PAUSE1,S3_10,S3_46",This is<>Gateshead Stadium,"The next station is Gateshead, change here for local bus services"
+25,GST,"MST01,PHSN17_E","MTS26_2,PHSN16_E,PAUSE1,S3_10,S3_46",This is<>Gateshead Stadium,"The next station is Gateshead, change here for local bus services"
+01,GHD,"MST01,PHSN16_E","MTS26_2,PHSN63_E,PAUSE1,S3_10,S3_51",This is<>Gateshead,"The next station is Central, change here for local and national rail and local bus services."
+03,GHD,"MST01,PHSN16_E","MTS26_2,PHSN63_E,PAUSE1,S3_10,S3_51",This is<>Gateshead,"The next station is Central, change here for local and national rail and local bus services."
+05,GHD,"MST01,PHSN16_E","MTS26_2,PHSN63_E,PAUSE1,S3_10,S3_51",This is<>Gateshead,"The next station is Central, change here for local and national rail and local bus services."
+06,GHD,"MST01,PHSN16_E","MTS26_2,PHSN63_E,PAUSE1,S3_10,S3_51",This is<>Gateshead,"The next station is Central, change here for local and national rail and local bus services."
+10,GHD,"MST01,PHSN16_E","MTS26_2,PHSN63_E,PAUSE1,S3_10,S3_51",This is<>Gateshead,"The next station is Central, change here for local and national rail and local bus services."
+20,GHD,"MST01,PHSN16_E","MTS26_2,PHSN63_E,PAUSE1,S3_10,S3_51",This is<>Gateshead,"The next station is Central, change here for local and national rail and local bus services."
+25,GHD,"MST01,PHSN16_E","MTS26_2,PHSN63_E,PAUSE1,S3_10,S3_51",This is<>Gateshead,"The next station is Central, change here for local and national rail and local bus services."
+01,CEN,"MST01,PHSN63_E","MTS26_2,PHSN14_E,PAUSE1,S3_49,PAUSE1,S3_10,S3_57",This is<>Central,"The next station is Monument, for Newcastle city centre.  Change here for trains to Whitley Bay via Wallsend, St James and local bus services"
+03,CEN,"MST01,PHSN63_E","MTS26_2,PHSN14_E,PAUSE1,S3_49,PAUSE1,S3_10,S3_57",This is<>Central,"The next station is Monument, for Newcastle city centre.  Change here for trains to Whitley Bay via Wallsend, St James and local bus services"
+05,CEN,"MST01,PHSN63_E","MTS26_2,PHSN14_E,PAUSE1,S3_49,PAUSE1,S3_10,S3_57",This is<>Central,"The next station is Monument, for Newcastle city centre.  Change here for trains to Whitley Bay via Wallsend, St James and local bus services"
+06,CEN,"MST01,PHSN63_E","MTS26_2,PHSN14_E,PAUSE1,S3_49,PAUSE1,S3_10,S3_57",This is<>Central,"The next station is Monument, for Newcastle city centre.  Change here for trains to Whitley Bay via Wallsend, St James and local bus services"
+10,CEN,"MST01,PHSN63_E","MTS26_2,PHSN14_E,PAUSE1,S3_49,PAUSE1,S3_10,S3_57",This is<>Central,"The next station is Monument, for Newcastle city centre.  Change here for trains to Whitley Bay via Wallsend, St James and local bus services"
+20,CEN,"MST01,PHSN63_E","S3_1,S3_4E,PAUSE1,PHSN14_E,PAUSE1,S3_49,PAUSE1,S3_10,S3_57",This is<>Central,"This train terminates at the next station, Monument, for Newcastle city centre.  Change here for trains to Whitley Bay via Wallsend, St James and local bus services"
+25,CEN,"MST01,PHSN63_E","MTS26_2,PHSN14_E,PAUSE1,S3_49,PAUSE1,S3_10,S3_57",This is<>Central,"The next station is Monument, for Newcastle city centre.  Change here for trains to Whitley Bay via Wallsend, St James and local bus services"
+01,MTS,"MST01,PHSN14_E","MTS26_2,PHSN13_E,PAUSE1,S3_62",This is<>Monument,"The next station is Haymarket, for city centre shops and local bus services."
+03,MTS,"MST01,PHSN14_E","MTS26_2,PHSN13_E,PAUSE1,S3_62",This is<>Monument,"The next station is Haymarket, for city centre shops and local bus services."
+05,MTS,"MST01,PHSN14_E","MTS26_2,PHSN13_E,PAUSE1,S3_62",This is<>Monument,"The next station is Haymarket, for city centre shops and local bus services."
+06,MTS,"MST01,PHSN14_E","MTS26_2,PHSN13_E,PAUSE1,S3_62",This is<>Monument,"The next station is Haymarket, for city centre shops and local bus services."
+10,MTS,"MST01,PHSN14_E","S3_1,S3_4E,PAUSE1,PHSN13_E,PAUSE1,S3_62",This is<>Monument,"This train terminates at the next station, Haymarket, for city centre shops and local bus services."
+20,MTS,"MST01,PHSN14_E,PAUSE1,S3_20",,"This is Monument, this train terminates here",
+25,MTS,"MST01,PHSN14_E","MTS26_2,PHSN13_E,PAUSE1,S3_62",This is<>Monument,"The next station is Haymarket, for city centre shops and local bus services."
+01,HAY,"MST01,PHSN13_E","MTS26_2,PHSN12_E",This is<>Haymarket,The next station is Jesmond
+03,HAY,"MST01,PHSN13_E","MTS26_2,PHSN12_E",This is<>Haymarket,The next station is Jesmond
+05,HAY,"MST01,PHSN13_E","MTS26_2,PHSN12_E",This is<>Haymarket,The next station is Jesmond
+06,HAY,"MST01,PHSN13_E","MTS26_2,PHSN12_E",This is<>Haymarket,The next station is Jesmond
+10,HAY,"MST01,PHSN13_E,PAUSE1,S3_20",,"This is Haymarket, this train terminates here",
+25,HAY,"MST01,PHSN13_E","MTS26_2,PHSN12_E",This is<>Haymarket,The next station is Jesmond
+01,JES,"MST01,PHSN12_E","MTS26_2,PHSN11_E",This is<>Jesmond,The next station is West Jesmond
+03,JES,"MST01,PHSN12_E","MTS26_2,PHSN11_E",This is<>Jesmond,The next station is West Jesmond
+05,JES,"MST01,PHSN12_E","MTS26_2,PHSN11_E",This is<>Jesmond,The next station is West Jesmond
+06,JES,"MST01,PHSN12_E","MTS26_2,PHSN11_E",This is<>Jesmond,The next station is West Jesmond
+25,JES,"MST01,PHSN12_E","MTS26_2,PHSN11_E",This is<>Jesmond,The next station is West Jesmond
+01,WJS,"MST01,PHSN11_E","MTS26_2,PHSN10_E",This is<>West Jesmond,The next station is Ilford Road
+03,WJS,"MST01,PHSN11_E","MTS26_2,PHSN10_E",This is<>West Jesmond,The next station is Ilford Road
+05,WJS,"MST01,PHSN11_E","MTS26_2,PHSN10_E",This is<>West Jesmond,The next station is Ilford Road
+06,WJS,"MST01,PHSN11_E","MTS26_2,PHSN10_E",This is<>West Jesmond,The next station is Ilford Road
+25,WJS,"MST01,PHSN11_E","MTS26_2,PHSN11_E",This is<>West Jesmond,The next station is Ilford Road
+01,ILF,"MST01,PHSN10_E","MTS26_2,PHSN09_E,PAUSE1,S3_10,S3_11M,MEQ08_3,PHSN02_N,S3_12,PHNO02_E",This is<>Ilford Road,"The next station is South Gosforth, change here for trains to the Airport from platform 2"
+03,ILF,"MST01,PHSN10_E","S3_1,S3_4E,PAUSE1,PHSN09_E,PAUSE1,PAUSE1,S3_10,S3_11M,MEQ08_3,PHSN02_N,S3_12,PHNO02_E",This is<>Ilford Road,"This train terminates at the next station, South Gosforth, change here for trains to the Airport from platform 2"
+05,ILF,"MST01,PHSN10_E","MTS26_2,PHSN09_E,PAUSE1,S3_10,S3_11M,MEQ08_3,PHSN02_N,S3_12,PHNO02_E",This is<>Ilford Road,"The next station is South Gosforth, change here for trains to the Airport from platform 2"
+06,ILF,"MST01,PHSN10_E","MTS26_2,PHSN09_E,PAUSE1,S3_10,S3_11M,MEQ08_3,PHSN02_N,S3_12,PHNO02_E",This is<>Ilford Road,"The next station is South Gosforth, change here for trains to the Airport from platform 2"
+25,ILF,"MST01,PHSN10_E","MTS26_2,PHSN09_E,PAUSE1,S3_10,S3_11M,MEQ08_3,PHSN02_N,S3_12,PHNO02_E",This is<>Ilford Road,"The next station is South Gosforth, change here for trains to the Airport from platform 2"
+01,SGF,"MST01,PHSN09_E,PAUSE1,S3_20",,"This is South Gosforth, this train terminates here",
+05,SGF,"MST01,PHSN09_E","MTS26_2,PHSN47_E",This is<>South Gosforth,The next station is Longbenton
+06,SGF,"MST01,PHSN09_E","MTS26_2,PHSN47_E",This is<>South Gosforth,The next station is Longbenton
+21,SGF,"MST01,PHSN09_E","MTS26_2,PHSN47_E",This is<>South Gosforth,The next station is Longbenton
+25,SGF,"MST01,PHSN09_E","MTS26_2,PHSN47_E",This is<>South Gosforth,The next station is Longbenton
+05,LBN,"MST01,PHSN47_E","MTS26_2,PHSN46_E,PAUSE1,S3_10,S3_46",This is<>Longbenton,"The next station is Four Lane Ends, change here for local bus services. "
+06,LBN,"MST01,PHSN47_E","MTS26_2,PHSN46_E,PAUSE1,S3_10,S3_46",This is<>Longbenton,"The next station is Four Lane Ends, change here for local bus services. "
+07,LBN,"MST01,PHSN47_E","MTS26_2,PHSN46_E,PAUSE1,S3_10,S3_46",This is<>Longbenton,"The next station is Four Lane Ends, change here for local bus services. "
+16,LBN,"MST01,PHSN47_E","MTS26_2,PHSN46_E,PAUSE1,S3_10,S3_46",This is<>Longbenton,"The next station is Four Lane Ends, change here for local bus services. "
+17,LBN,"MST01,PHSN47_E","MTS26_2,PHSN46_E,PAUSE1,S3_10,S3_46",This is<>Longbenton,"The next station is Four Lane Ends, change here for local bus services. "
+21,LBN,"MST01,PHSN47_E","MTS26_2,PHSN46_E,PAUSE1,S3_10,S3_46",This is<>Longbenton,"The next station is Four Lane Ends, change here for local bus services. "
+25,LBN,"MST01,PHSN47_E","MTS26_2,PHSN46_E,PAUSE1,S3_10,S3_46",This is<>Longbenton,"The next station is Four Lane Ends, change here for local bus services. "
+26,LBN,"MST01,PHSN47_E","MTS26_2,PHSN46_E,PAUSE1,S3_10,S3_46",This is<>Longbenton,"The next station is Four Lane Ends, change here for local bus services. "
+05,FLE,"MST01,PHSN46_E","S3_1,S3_4E,PAUSE1,PHSN45_E",This is<>Four Lane Ends,"This train terminates at the next station, Benton"
+06,FLE,"MST01,PHSN46_E","MTS26_2,PHSN45_E",This is<>Four Lane Ends,The next station is Benton
+07,FLE,"MST01,PHSN46_E","MTS26_2,PHSN45_E",This is<>Four Lane Ends,The next station is Benton
+16,FLE,"MST01,PHSN46_E","MTS26_2,PHSN45_E",This is<>Four Lane Ends,The next station is Benton
+17,FLE,"MST01,PHSN46_E","MTS26_2,PHSN45_E",This is<>Four Lane Ends,The next station is Benton
+21,FLE,"MST01,PHSN46_E","MTS26_2,PHSN45_E",This is<>Four Lane Ends,The next station is Benton
+25,FLE,"MST01,PHSN46_E","MTS26_2,PHSN45_E",This is<>Four Lane Ends,The next station is Benton
+26,FLE,"MST01,PHSN46_E","MTS26_2,PHSN45_E",This is<>Four Lane Ends,The next station is Benton
+05,BTN,"MST01,PHSN45_E,PAUSE1,S3_20",,"This is Benton, this train terminates here",
+06,BTN,"MST01,PHSN45_E","MTS26_2,PHSN44_E",This is<>Benton,The next station is Palmersville
+07,BTN,"MST01,PHSN45_E","MTS26_2,PHSN44_E",This is<>Benton,The next station is Palmersville
+16,BTN,"MST01,PHSN45_E","MTS26_2,PHSN44_E",This is<>Benton,The next station is Palmersville
+17,BTN,"MST01,PHSN45_E","MTS26_2,PHSN44_E",This is<>Benton,The next station is Palmersville
+21,BTN,"MST01,PHSN45_E","MTS26_2,PHSN44_E",This is<>Benton,The next station is Palmersville
+25,BTN,"MST01,PHSN45_E","MTS26_2,PHSN44_E",This is<>Benton,The next station is Palmersville
+26,BTN,"MST01,PHSN45_E","MTS26_2,PHSN44_E",This is<>Benton,The next station is Palmersville
+06,PMV,"MST01,PHSN44_E","MTS26_2,S3_31E,PAUSE1,PAUSE1,S3_63",This is<>Palmersville,"The next station is Northumberland Park, for local buses to Colbalt Business Park and Silverlink retail."
+07,PMV,"MST01,PHSN44_E","MTS26_2,S3_31E,PAUSE1,PAUSE1,S3_63",This is<>Palmersville,"The next station is Northumberland Park, for local buses to Colbalt Business Park and Silverlink retail."
+16,PMV,"MST01,PHSN44_E","MTS26_2,S3_31E,PAUSE1,PAUSE1,S3_63",This is<>Palmersville,"The next station is Northumberland Park, for local buses to Colbalt Business Park and Silverlink retail."
+17,PMV,"MST01,PHSN44_E","MTS26_2,S3_31E,PAUSE1,PAUSE1,S3_63",This is<>Palmersville,"The next station is Northumberland Park, for local buses to Colbalt Business Park and Silverlink retail."
+21,PMV,"MST01,PHSN44_E","MTS26_2,S3_31E,PAUSE1,PAUSE1,S3_63",This is<>Palmersville,"The next station is Northumberland Park, for local buses to Colbalt Business Park and Silverlink retail."
+25,PMV,"MST01,PHSN44_E","MTS26_2,S3_31E,PAUSE1,PAUSE1,S3_63",This is<>Palmersville,"The next station is Northumberland Park, for local buses to Colbalt Business Park and Silverlink retail."
+26,PMV,"MST01,PHSN44_E","MTS26_2,S3_31E,PAUSE1,PAUSE1,S3_63",This is<>Palmersville,"The next station is Northumberland Park, for local buses to Colbalt Business Park and Silverlink retail."
+06,NPK,"MST01,S3_31E","MTS26_2,PHSN43_E",This is Northumberland Park,The next station is Shiremoor
+07,NPK,"MST01,S3_31E","MTS26_2,PHSN43_E",This is Northumberland Park,The next station is Shiremoor
+16,NPK,"MST01,S3_31E","MTS26_2,PHSN43_E",This is Northumberland Park,The next station is Shiremoor
+17,NPK,"MST01,S3_31E","MTS26_2,PHSN43_E",This is Northumberland Park,The next station is Shiremoor
+21,NPK,"MST01,S3_31E","MTS26_2,PHSN43_E",This is Northumberland Park,The next station is Shiremoor
+25,NPK,"MST01,S3_31E","MTS26_2,PHSN43_E",This is Northumberland Park,The next station is Shiremoor
+26,NPK,"MST01,S3_31E","MTS26_2,PHSN43_E",This is Northumberland Park,The next station is Shiremoor
+06,SMR,"MST01,PHSN43_E","MTS26_2,PHSN42_E",This is<>Shiremoor,The next station is West Monkseaton
+07,SMR,"MST01,PHSN43_E","MTS26_2,PHSN42_E",This is<>Shiremoor,The next station is West Monkseaton
+16,SMR,"MST01,PHSN43_E","MTS26_2,PHSN42_E",This is<>Shiremoor,The next station is West Monkseaton
+17,SMR,"MST01,PHSN43_E","MTS26_2,PHSN42_E",This is<>Shiremoor,The next station is West Monkseaton
+21,SMR,"MST01,PHSN43_E","MTS26_2,PHSN42_E",This is<>Shiremoor,The next station is West Monkseaton
+25,SMR,"MST01,PHSN43_E","MTS26_2,PHSN42_E",This is<>Shiremoor,The next station is West Monkseaton
+26,SMR,"MST01,PHSN43_E","MTS26_2,PHSN42_E",This is<>Shiremoor,The next station is West Monkseaton
+06,WMN,"MST01,PHSN42_E","MTS26_2,PHSN41_E",This is<>West Monkseaton,The next station is Monkseaton
+07,WMN,"MST01,PHSN42_E","MTS26_2,PHSN41_E",This is<>West Monkseaton,The next station is Monkseaton
+16,WMN,"MST01,PHSN42_E","MTS26_2,PHSN41_E",This is<>West Monkseaton,The next station is Monkseaton
+17,WMN,"MST01,PHSN42_E","MTS26_2,PHSN41_E",This is<>West Monkseaton,The next station is Monkseaton
+21,WMN,"MST01,PHSN42_E","MTS26_2,PHSN41_E",This is<>West Monkseaton,The next station is Monkseaton
+25,WMN,"MST01,PHSN42_E","S3_1,S3_4E,PAUSE1,PHSN41_E",This is<>West Monkseaton,"This train terminates at the next station, Monkseaton"
+26,WMN,"MST01,PHSN42_E","MTS26_2,PHSN41_E",This is<>West Monkseaton,The next station is Monkseaton
+06,MSN,"MST01,PHSN41_E","MTS26_2,PHSN40_E",This is<>Monkseaton,The next station is Whitley Bay
+07,MSN,"MST01,PHSN41_E","MTS26_2,PHSN40_E",This is<>Monkseaton,The next station is Whitley Bay
+16,MSN,"MST01,PHSN41_E","MTS26_2,PHSN40_E",This is<>Monkseaton,The next station is Whitley Bay
+17,MSN,"MST01,PHSN41_E","MTS26_2,PHSN40_E",This is<>Monkseaton,The next station is Whitley Bay
+21,MSN,"MST01,PHSN41_E","MTS26_2,PHSN40_E",This is<>Monkseaton,The next station is Whitley Bay
+25,MSN,"MST01,PHSN41_E,PAUSE1,S3_20",,"This is Monkseaton, this train terminates here",
+26,MSN,"MST01,PHSN41_E","MTS26_2,PHSN40_E",This is<>Monkseaton,The next station is Whitley Bay
+06,WTL,"MST01,PHSN40_E","MTS26_2,PHSN39_E",This is<>Whitley Bay,The next station is Cullercoats
+07,WTL,"MST01,PHSN40_E","MTS26_2,PHSN39_E",This is<>Whitley Bay,The next station is Cullercoats
+16,WTL,"MST01,PHSN40_E","MTS26_2,PHSN39_E",This is<>Whitley Bay,The next station is Cullercoats
+17,WTL,"MST01,PHSN40_E","MTS26_2,PHSN39_E",This is<>Whitley Bay,The next station is Cullercoats
+21,WTL,"MST01,PHSN40_E","MTS26_2,PHSN39_E",This is<>Whitley Bay,The next station is Cullercoats
+26,WTL,"MST01,PHSN40_E","MTS26_2,PHSN39_E",This is<>Whitley Bay,The next station is Cullercoats
+06,CUL,"MST01,PHSN39_E","MTS26_2,PHSN38_E,PAUSE1,S3_34",This is<>Cullercoats,The next station is Tynemouth. Please mind the gap when alighting at this station
+07,CUL,"MST01,PHSN39_E","MTS26_2,PHSN38_E,PAUSE1,S3_34",This is<>Cullercoats,The next station is Tynemouth. Please mind the gap when alighting at this station
+16,CUL,"MST01,PHSN39_E","MTS26_2,PHSN38_E,PAUSE1,S3_34",This is<>Cullercoats,The next station is Tynemouth. Please mind the gap when alighting at this station
+17,CUL,"MST01,PHSN39_E","MTS26_2,PHSN38_E,PAUSE1,S3_34",This is<>Cullercoats,The next station is Tynemouth. Please mind the gap when alighting at this station
+21,CUL,"MST01,PHSN39_E","MTS26_2,PHSN38_E,PAUSE1,S3_34",This is<>Cullercoats,The next station is Tynemouth. Please mind the gap when alighting at this station
+26,CUL,"MST01,PHSN39_E","S3_1,S3_4E,PAUSE1,PHSN38_E,PAUSE1,S3_34",This is<>Cullercoats,"This train terminates at the next station, Tynemouth. Please mind the gap when alighting at this station"
+06,TYN,"MST01,PHSN38_E,PAUSE1,S3_34","S3_1,S3_4E,PAUSE1,PHSN37_E",This is Tynemouth.  Please mind the gap when alighting at this station,"This train terminates at the next station, North Shields"
+07,TYN,"MST01,PHSN38_E,PAUSE1,S3_34","MTS26_2,PHSN37_E",This is Tynemouth.  Please mind the gap when alighting at this station,The next station is North Shields
+16,TYN,"MST01,PHSN38_E,PAUSE1,S3_34","MTS26_2,PHSN37_E",This is Tynemouth.  Please mind the gap when alighting at this station,The next station is North Shields
+17,TYN,"MST01,PHSN38_E,PAUSE1,S3_34","MTS26_2,PHSN37_E",This is Tynemouth.  Please mind the gap when alighting at this station,The next station is North Shields
+21,TYN,"MST01,PHSN38_E,PAUSE1,S3_34","MTS26_2,PHSN37_E",This is Tynemouth.  Please mind the gap when alighting at this station,The next station is North Shields
+26,TYN,"MST01,PHSN38_E,PAUSE1,S3_20,PAUSE1,S3_34",,"This is Tynemouth, this train terminates here.  Please mind the gap when alighting at this station",
+06,NSH,"MST01,PHSN37_E,PAUSE1,S3_20",,"This is North Shields, this train terminates here",
+07,NSH,"MST01,PHSN37_E","MTS26_2,PHSN36_E",This is<>North Shields,The next station is Meadow Well
+16,NSH,"MST01,PHSN37_E","MTS26_2,PHSN36_E",This is<>North Shields,The next station is Meadow Well
+17,NSH,"MST01,PHSN37_E","MTS26_2,PHSN36_E",This is<>North Shields,The next station is Meadow Well
+21,NSH,"MST01,PHSN37_E","MTS26_2,PHSN36_E",This is<>North Shields,The next station is Meadow Well
+07,MWL,"MST01,PHSN36_E","MTS26_2,PHSN35_E",This is<>Meadow Well,The next station is Percy Main
+16,MWL,"MST01,PHSN36_E","MTS26_2,PHSN35_E",This is<>Meadow Well,The next station is Percy Main
+17,MWL,"MST01,PHSN36_E","MTS26_2,PHSN35_E",This is<>Meadow Well,The next station is Percy Main
+21,MWL,"MST01,PHSN36_E","MTS26_2,PHSN35_E",This is<>Meadow Well,The next station is Percy Main
+07,MWL,"MST01,PHSN35_E","MTS26_2,PHSN34_E,PAUSE1,S3_64",This is<>Percy Main,The next station is Howdon. Please take care if using the level crossing.
+07,PCM,"MST01,PHSN35_E","MTS26_2,PHSN34_E,PAUSE1,S3_64",This is<>Percy Main,The next station is Howdon. Please take care if using the level crossing.
+16,PCM,"MST01,PHSN35_E","MTS26_2,PHSN34_E,PAUSE1,S3_64",This is<>Percy Main,The next station is Howdon. Please take care if using the level crossing.
+17,PCM,"MST01,PHSN35_E","MTS26_2,PHSN34_E,PAUSE1,S3_64",This is<>Percy Main,The next station is Howdon. Please take care if using the level crossing.
+21,PCM,"MST01,PHSN35_E","MTS26_2,PHSN34_E,PAUSE1,S3_64",This is<>Percy Main,The next station is Howdon. Please take care if using the level crossing.
+07,HOW,"MST01,PHSN34_E","MTS26_2,PHSN33_E",This is<>Howdon,The next station is Hadrian Road
+16,HOW,"MST01,PHSN34_E","MTS26_2,PHSN33_E",This is<>Howdon,The next station is Hadrian Road
+17,HOW,"MST01,PHSN34_E","MTS26_2,PHSN33_E",This is<>Howdon,The next station is Hadrian Road
+21,HOW,"MST01,PHSN34_E","MTS26_2,PHSN33_E",This is<>Howdon,The next station is Hadrian Road
+07,HDR,"MST01,PHSN33_E","MTS26_2,PHSN32_E,PAUSE1,S3_10,S3_46",This is<>Hadrian Road,"The next station is Wallsend, change here for local bus services. "
+16,HDR,"MST01,PHSN33_E","S3_1,S3_4E,PAUSE1,PHSN32_E,PAUSE1,S3_10,S3_46",This is<>Hadrian Road,"This train terminates at the next station, Wallsend, change here for local bus services. "
+17,HDR,"MST01,PHSN33_E","MTS26_2,PHSN32_E,PAUSE1,S3_10,S3_46",This is<>Hadrian Road,"The next station is Wallsend, change here for local bus services. "
+21,HDR,"MST01,PHSN33_E","MTS26_2,PHSN32_E,PAUSE1,S3_10,S3_46",This is<>Hadrian Road,"The next station is Wallsend, change here for local bus services. "
+07,WSD,"MST01,PHSN32_E","MTS26_2,PHSN31_E",This is<>Wallsend,The next station is Walkergate
+16,WSD,"MST01,PHSN32_E,PAUSE1,S3_20",,"This is Wallsend, this train terminates here",
+17,WSD,"MST01,PHSN32_E","MTS26_2,PHSN31_E",This is<>Wallsend,The next station is Walkergate
+21,WSD,"MST01,PHSN32_E","MTS26_2,PHSN31_E",This is<>Wallsend,The next station is Walkergate
+07,WKG,"MST01,PHSN31_E","MTS26_2,PHSN30_E",This is<>Walkergate,The next station is Chillingham Road
+17,WKG,"MST01,PHSN31_E","MTS26_2,PHSN30_E",This is<>Walkergate,The next station is Chillingham Road
+21,WKG,"MST01,PHSN31_E","MTS26_2,PHSN30_E",This is<>Walkergate,The next station is Chillingham Road
+07,CRD,"MST01,PHSN30_E","MTS26_2,PHSN29_E",This is<>Chillingham Road,The next station is Byker
+17,CRD,"MST01,PHSN30_E","MTS26_2,PHSN29_E",This is<>Chillingham Road,The next station is Byker
+21,CRD,"MST01,PHSN30_E","MTS26_2,PHSN29_E",This is<>Chillingham Road,The next station is Byker
+07,BYK,"MST01,PHSN29_E","MTS26_2,PHSN28_E",This is<>Byker,The next station is Manors
+17,BYK,"MST01,PHSN29_E","S3_1,S3_4E,PAUSE1,PHSN28_E",This is<>Byker,"This train terminates at the next station, Manors"
+21,BYK,"MST01,PHSN29_E","MTS26_2,PHSN28_E",This is<>Byker,The next station is Manors
+07,MAN,"MST01,PHSN28_E","MTS26_2,PHSN14_E,S3_49,PAUSE1,S3_10,S3_11M,S3_55",This is<>Manors,"The next station is Monument, for Newcastle city centre. Change here for trains to South Shields, South Hylton, Airport and Whitley Bay via Four Lane Ends, and local bus services"
+17,MAN,"MST01,PHSN28_E,PAUSE1,S3_20",,"This is Manors, this train terminates here",
+21,MAN,"MST01,PHSN28_E","S3_1,S3_4E,PAUSE1,PHSN14_E,S3_49,PAUSE1,S3_10,S3_11M,S3_55",This is<>Manors,"This train terminates at the next station, Monument, for Newcastle city centre. Change here for trains to South Shields, South Hylton, Airport and Whitley Bay via Four Lane Ends, and local bus services"
+07,MTW,"MST01,PHSN14_E","S3_1,S3_4E,PAUSE1,PHSN27_E",This is<>Monument,"This train terminates at the next station, St James"
+21,MTW,"MST01,PHSN14_E,PAUSE1,S3_20",,"This is Monument, this train terminates here",
+07,SJM,"MST01,PHSN27_E,PAUSE1,S3_20",,"This is St James, this train terminates here",

@@ -1,0 +1,548 @@
+male/MCM03,Please await further instruction.,EOS
+female/MCY01,Welcome to Metro.,MOS
+male/MCY02,...apologies for the inconvenience.,EOS
+female/MCY02,Metro apologises for the inconvenience.,EOS
+male/MCY04,...with information for passengers at...,MOS
+female/MDD08_ALT,The service will resume as soon as we have clearance from the emergency services.,EOS
+female/MDD09_ALT,Metro passenger services will keep you updated using the Public Address system. Any further information required can be obtained using your nearest help point.,EOS
+male/MEQ06_2,...we will test the fire alarm system.,EOS
+male/MEQ10_3,Therefore would passengers requiring the use of a lift please use platform 2.,MOS
+male/MRI12,Please do not leave luggage unattended anywhere in the station.,EOS
+female/MRI15,There is currently no automated train information available.,EOS
+male/MSE01_2,...wish all passengers a happy...,MOS
+female/MSE01,The Metro staff wish all passengers a happy...,BOS
+male/MTS23_5,Newcastle only. Metro passenger services will make further announcements giving train destinations.,EOS
+female/MST04_1,...is not permitted in any part of the Metro railway.,MOS
+female/MST04_2,Please refrain from...,MOS
+female/MST04_3,...at all times when on Metro premises and trains.,MOS
+female/MTS10_2,...will not stop at this station. Will passengers please stand clear at the platform edge.,EOS
+PHIN01_N,...a technical fault on the train.,MOS
+PHIN01_E,...a technical fault on the train.,EOS
+PHIN02_N,...a signalling fault...,MOS
+PHIN02_E,...a signalling fault.,EOS
+PHIN03_N,...a problem with the power supply...,MOS
+PHIN03_E,...a problem with the power supply.,EOS
+PHIN04_N,...someone on the track...,MOS
+PHIN04_E,...someone on the track.,EOS
+PHIN05_N,...a station fire...,MOS
+PHIN05_E,...a station fire.,EOS
+PHIN06_N,...a tunnel fire...,MOS
+PHIN06_E,...a tunnel fire.,EOS
+PHIN07_N,...a track-side fire...,MOS
+PHIN07_E,...a track-side fire.,EOS
+PHIN08_N,...police action...,MOS
+PHIN08_E,...police action.,EOS
+PHIN09_N,...an ambulance attending...,MOS
+PHIN09_E,...an ambulance attending.,EOS
+PHIN10_N,...a technical fault...,MOS
+PHIN10_E,...a technical fault.,EOS
+PHIN11_N,...operational reasons...,MOS
+PHIN11_E,...operational reasons.,EOS
+PHIN12_N,...vandalism...,MOS
+PHIN12_E,...vandalism.,EOS
+PHWE01_N,...flooding...,MOS
+PHWE02_N,...high winds...,MOS
+PHWE03_N,...ice...,MOS
+PHWE04_N,...snow...,MOS
+PHWE05_N,...risk of lightning...,MOS
+PHSN01_N,...the coast...,MOS
+PHSN01_E,...the coast.,EOS
+PHSN02_N,...Airport...,MOS
+PHSN02_E,...Airport.,EOS
+PHSN03_N,...Callerton Parkway...,MOS
+PHSN03_E,...Callerton Parkway.,EOS
+PHSN04_N,...Bank Foot...,MOS
+PHSN04_E,...Bank Foot.,EOS
+PHSN05_N,...Kingston Park...,MOS
+PHSN05_E,...Kingston Park.,EOS
+PHSN06_N,...Fawdon...,MOS
+PHSN06_E,...Fawdon.,EOS
+PHSN07_N,...Wansbeck Road...,MOS
+PHSN07_E,...Wansbeck Road.,EOS
+PHSN08_N,...Regent Centre...,MOS
+PHSN08_E,...Regent Centre.,EOS
+PHSN09_N,...South Gosforth...,MOS
+PHSN09_E,...South Gosforth.,EOS
+PHSN10_N,...Ilford Road...,MOS
+PHSN10_E,...Ilford Road.,EOS
+PHSN11_N,...West Jesmond...,MOS
+PHSN11_E,...West Jesmond.,EOS
+PHSN12_N,...Jesmond...,MOS
+PHSN12_E,...Jesmond.,EOS
+PHSN13_N,...Haymarket...,MOS
+PHSN13_E,...Haymarket.,EOS
+PHSN14_N,...Monument...,MOS
+PHSN14_E,...Monument.,EOS
+PHSN15_N,...Central Station...,MOS
+PHSN15_E,...Central Station.,EOS
+PHSN16_N,...Gateshead...,MOS
+PHSN16_E,...Gateshead.,EOS
+PHSN17_N,...Gateshead Stadium...,MOS
+PHSN17_E,...Gateshead Stadium.,EOS
+PHSN18_N,...Felling...,MOS
+PHSN18_E,...Felling.,EOS
+PHSN19_N,...Heworth...,MOS
+PHSN19_E,...Heworth.,EOS
+PHSN20_N,...Pelaw...,MOS
+PHSN20_E,...Pelaw.,EOS
+PHSN21_N,...Hebburn...,MOS
+PHSN21_E,...Hebburn.,EOS
+PHSN22_N,...Jarrow...,MOS
+PHSN22_E,...Jarrow.,EOS
+PHSN23_N,...Bede...,MOS
+PHSN23_E,...Bede.,EOS
+PHSN24_N,...Tyne Dock...,MOS
+PHSN24_E,...Tyne Dock.,EOS
+PHSN25_N,...Chichester...,MOS
+PHSN25_E,...Chichester.,EOS
+PHSN26_N,...South Shields...,MOS
+PHSN26_E,...South Shields.,EOS
+PHSN27_N,...St James...,MOS
+PHSN27_E,...St James.,EOS
+PHSN28_N,...Manors...,MOS
+PHSN28_E,...Manors.,EOS
+PHSN29_N,...Byker...,MOS
+PHSN29_E,...Byker.,EOS
+PHSN30_N,...Chillingham Road...,MOS
+PHSN30_E,...Chillingham Road.,EOS
+PHSN31_N,...Walkergate...,MOS
+PHSN31_E,...Walkergate.,EOS
+PHSN32_N,...Wallsend...,MOS
+PHSN32_E,...Wallsend.,EOS
+PHSN33_N,...Hadrian Road...,MOS
+PHSN33_E,...Hadrian Road.,EOS
+PHSN34_N,...Howdon...,MOS
+PHSN34_E,...Howdon.,EOS
+PHSN35_N,...Percy Main...,MOS
+PHSN35_E,...Percy Main.,EOS
+PHSN36_N,...Meadow Well...,MOS
+PHSN36_E,...Meadow Well.,EOS
+PHSN37_N,...North Shields...,MOS
+PHSN37_E,...North Shields.,EOS
+PHSN38_N,...Tynemouth...,MOS
+PHSN38_E,...Tynemouth.,EOS
+PHSN39_N,...Cullercoats...,MOS
+PHSN39_E,...Cullercoats.,EOS
+PHSN40_N,...Whitley Bay...,MOS
+PHSN40_E,...Whitley Bay.,EOS
+PHSN41_N,...Monkseaton...,MOS
+PHSN41_E,...Monkseaton.,EOS
+PHSN42_N,...West Monkseaton...,MOS
+PHSN42_E,...West Monkseaton.,EOS
+PHSN43_N,...Shiremoor...,MOS
+PHSN43_E,...Shiremoor.,EOS
+PHSN44_N,...Palmersville...,MOS
+PHSN44_E,...Palmersville.,EOS
+PHSN45_N,...Benton...,MOS
+PHSN45_E,...Benton.,EOS
+PHSN46_N,...Four Lane Ends...,MOS
+PHSN46_E,...Four Lane Ends.,EOS
+PHSN47_N,...Longbenton...,MOS
+PHSN47_E,...Longbenton.,EOS
+PHSN48_N,...Fellgate...,MOS
+PHSN48_E,...Fellgate.,EOS
+PHSN49_N,...Brockley Whins...,MOS
+PHSN49_E,...Brockley Whins.,EOS
+PHSN50_N,...East Bolden...,MOS
+PHSN50_E,...East Bolden.,EOS
+PHSN51_N,...Seaburn...,MOS
+PHSN51_E,...Seaburn.,EOS
+PHSN52_N,...Stadium of Light...,MOS
+PHSN52_E,...Stadium of Light.,EOS
+PHSN53_N,...St Peter's...,MOS
+PHSN53_E,...St Peter's.,EOS
+PHSN54_N,...Sunderland...,MOS
+PHSN54_E,...Sunderland.,EOS
+PHSN55_N,...Park Lane...,MOS
+PHSN55_E,...Park Lane.,EOS
+PHSN56_N,...University...,MOS
+PHSN56_E,...University.,EOS
+PHSN57_N,...Millfield...,MOS
+PHSN57_E,...Millfield.,EOS
+PHSN58_N,...Pallion...,MOS
+PHSN58_E,...Pallion.,EOS
+PHSN59_N,...South Hylton...,MOS
+PHSN59_E,...South Hylton.,EOS
+PHSN60_N,...Northumberland Park...,MOS
+PHSN60_E,...Northumberland Park.,EOS
+PHSN61_N,...Simonside...,MOS
+PHSN61_E,...Simonside.,EOS
+PHSN62_N,...High Lane Row...,MOS
+PHSN62_E,...High Lane Row.,EOS
+male/PHSN63_N,...Central...,MOS
+male/PHSN63_E,...Central.,EOS
+female/PHSN63_N,...Newcastle...,MOS
+female/PHSN63_E,...Newcastle.,EOS
+female/PHNP01,...the first...,MOS
+female/PHNP02,...the second...,MOS
+female/PHNP03,...the third...,MOS
+female/PHNP04,...the fourth...,MOS
+female/PHNP05,...the fifth...,MOS
+female/PHNP06,...the sixth...,MOS
+female/PHNP07,...the seventh...,MOS
+female/PHNP08,...the eighth...,MOS
+female/PHNP09,...the ninth...,MOS
+female/PHNP10,...the tenth...,MOS
+female/PHNP11,...the eleventh...,MOS
+female/PHNP12,...the twelfth...,MOS
+female/PHNP13,...the thirteenth...,MOS
+female/PHNP14,...the fourteenth...,MOS
+female/PHNP15,...the fifteenth...,MOS
+female/PHNP16,...the sixteenth...,MOS
+female/PHNP17,...the seventeenth...,MOS
+female/PHNP18,...the eighteenth...,MOS
+female/PHNP19,...the nineteenth...,MOS
+female/PHNP20,...the twentieth...,MOS
+female/PHNP21,...the twenty first...,MOS
+female/PHNP22,...the twenty second...,MOS
+female/PHNP23,...the twenty third...,MOS
+female/PHNP24,...the twenty fourth...,MOS
+female/PHNP25,...the twenty fifth...,MOS
+female/PHNP26,...the twenty sixth...,MOS
+female/PHNP27,...the twenty seventh...,MOS
+female/PHNP28,...the twenty eighth...,MOS
+female/PHNP29,...the twenty ninth...,MOS
+female/PHNP30,...the thirtieth...,MOS
+female/PHNP31,...the thirty first...,MOS
+PHNU01,...first.,EOS
+female/PHNU01_N,...first...,MOS
+PHNU02,...second.,EOS
+female/PHNU02_N,...second...,MOS
+PHNU03,...third.,EOS
+female/PHNU03_N,...third...,MOS
+PHNU04,...fourth.,EOS
+female/PHNU04_N,...fourth...,MOS
+PHNU05,...fifth.,EOS
+female/PHNU05_N,...fifth...,MOS
+PHNU06,...sixth.,EOS
+female/PHNU06_N,...sixth...,MOS
+PHNU07,...seventh.,EOS
+female/PHNU07_N,...seventh...,MOS
+PHNU08,...eighth.,EOS
+female/PHNU08_N,...eighth...,MOS
+PHNU09,...ninth.,EOS
+female/PHNU09_N,...ninth...,MOS
+PHNU10,...tenth.,EOS
+female/PHNU10_N,...tenth...,MOS
+PHNU11,...eleventh.,EOS
+female/PHNU11_N,...eleventh...,MOS
+PHNU12,...twelfth.,EOS
+female/PHNU12_N,...twelfth...,MOS
+PHNU13,...thirteenth.,EOS
+PHNU14,...fourteenth.,EOS
+PHNU15,...fifteenth.,EOS
+PHNU16,...sixteenth.,EOS
+PHNU17,...seventeenth.,EOS
+PHNU18,...eighteenth.,EOS
+PHNU19,...nineteenth.,EOS
+PHNU20,...twentieth.,EOS
+PHNU21,...twenty first.,EOS
+PHNU22,...twenty second.,EOS
+PHNU23,...twenty third.,EOS
+PHNU24,...twenty fourth.,EOS
+PHNU25,...twenty fifth.,EOS
+PHNU26,...twenty sixth.,EOS
+PHNU27,...twenty seventh.,EOS
+PHNU28,...twenty eighth.,EOS
+PHNU29,...twenty ninth.,EOS
+PHNU30,...thirtieth.,EOS
+PHNU31,...thirty first.,EOS
+PHNM01_E,...one.,EOS
+PHNM01_N,...one...,MOS
+PHNM02_E,...two.,EOS
+PHNM02_N,...two...,MOS
+PHNM03_E,...three.,EOS
+PHNM03_N,...three...,MOS
+PHNM04_E,...four.,EOS
+PHNM04_N,...four...,MOS
+PHNM05_E,...five.,EOS
+PHNM05_N,...five...,MOS
+PHNM06_E,...six.,EOS
+PHNM06_N,...six...,MOS
+PHNM07_E,...seven.,EOS
+PHNM07_N,...seven...,MOS
+PHNM08_E,...eight.,EOS
+PHNM08_N,...eight...,MOS
+PHNM09_E,...nine.,EOS
+PHNM09_N,...nine...,MOS
+PHNM10_E,...ten.,EOS
+PHNM10_N,...ten...,MOS
+PHNM11_E,...eleven.,EOS
+PHNM11_N,...eleven...,MOS
+PHNM12_E,...twelve.,EOS
+PHNM12_N,...twelve...,MOS
+PHNM13_E,...thirteen.,EOS
+PHNM13_N,...thirteen...,MOS
+PHNM14_E,...fourteen.,EOS
+PHNM14_N,...fourteen...,MOS
+PHNM15_E,...fifteen.,EOS
+PHNM15_N,...fifteen...,MOS
+PHNM16_E,...sixteen.,EOS
+PHNM16_N,...sixteen...,MOS
+PHNM17_E,...seventeen.,EOS
+PHNM17_N,...seventeen...,MOS
+PHNM18_E,...eighteen.,EOS
+PHNM18_N,...eighteen...,MOS
+PHNM19_E,...nineteen.,EOS
+PHNM19_N,...nineteen...,MOS
+PHNM20_E,...twenty.,EOS
+PHNM20_N,...twenty...,MOS
+PHNM21_E,...twenty one.,EOS
+PHNM21_N,...twenty one...,MOS
+PHNM22_E,...twenty two.,EOS
+PHNM22_N,...twenty two...,MOS
+PHNM23_E,...twenty three.,EOS
+PHNM23_N,...twenty three...,MOS
+PHNM24_E,...twenty four.,EOS
+PHNM24_N,...twenty four...,MOS
+PHNM25_E,...twenty five.,EOS
+PHNM25_N,...twenty five...,MOS
+PHNM26_E,...twenty six.,EOS
+PHNM26_N,...twenty six...,MOS
+PHNM27_E,...twenty seven.,EOS
+PHNM27_N,...twenty seven...,MOS
+PHNM28_E,...twenty eight.,EOS
+PHNM28_N,...twenty eight...,MOS
+PHNM29_E,...twenty nine.,EOS
+PHNM29_N,...twenty nine...,MOS
+PHNM30_E,...thirty.,EOS
+PHNM30_N,...thirty...,MOS
+PHNM31_E,...thirty one.,EOS
+PHNM31_N,...thirty one...,MOS
+PHNM32_E,...thirty two.,EOS
+PHNM32_N,...thirty two...,MOS
+PHNM33_E,...thirty three.,EOS
+PHNM33_N,...thirty three...,MOS
+PHNM34_E,...thirty four.,EOS
+PHNM34_N,...thirty four...,MOS
+PHNM35_E,...thirty five.,EOS
+PHNM35_N,...thirty five...,MOS
+PHNM36_E,...thirty six.,EOS
+PHNM36_N,...thirty six...,MOS
+PHNM37_E,...thirty seven.,EOS
+PHNM37_N,...thirty seven...,MOS
+PHNM38_E,...thirty eight.,EOS
+PHNM38_N,...thirty eight...,MOS
+PHNM39_E,...thirty nine.,EOS
+PHNM39_N,...thirty nine...,MOS
+PHNM40_E,...forty.,EOS
+PHNM40_N,...forty...,MOS
+PHNM41_E,...forty one.,EOS
+PHNM41_N,...forty one...,MOS
+PHNM42_E,...forty two.,EOS
+PHNM42_N,...forty two...,MOS
+PHNM43_E,...forty three.,EOS
+PHNM43_N,...forty three...,MOS
+PHNM44_E,...forty four.,EOS
+PHNM44_N,...forty four...,MOS
+PHNM45_E,...forty five.,EOS
+PHNM45_N,...forty five...,MOS
+PHNM46_E,...forty six.,EOS
+PHNM46_N,...forty six...,MOS
+PHNM47_E,...forty seven.,EOS
+PHNM47_N,...forty seven...,MOS
+PHNM48_E,...forty eight.,EOS
+PHNM48_N,...forty eight...,MOS
+PHNM49_E,...forty nine.,EOS
+PHNM49_N,...forty nine...,MOS
+PHNM50_E,...fifty.,EOS
+PHNM50_N,...fifty...,MOS
+PHNM51_E,...fifty one.,EOS
+PHNM51_N,...fifty one...,MOS
+PHNM52_E,...fifty two.,EOS
+PHNM52_N,...fifty two...,MOS
+PHNM53_E,...fifty three.,EOS
+PHNM53_N,...fifty three...,MOS
+PHNM54_E,...fifty four.,EOS
+PHNM54_N,...fifty four...,MOS
+PHNM55_E,...fifty five.,EOS
+PHNM55_N,...fifty five...,MOS
+PHNM56_E,...fifty six.,EOS
+PHNM56_N,...fifty six...,MOS
+PHNM57_E,...fifty seven.,EOS
+PHNM57_N,...fifty seven...,MOS
+PHNM58_E,...fifty eight.,EOS
+PHNM58_N,...fifty eight...,MOS
+PHNM59_E,...fifty nine.,EOS
+PHNM59_N,...fifty nine...,MOS
+PHNM60_E,...sixty.,EOS
+PHNM60_N,...sixty...,MOS
+PHNM61_E,...oh one.,EOS
+PHNM61_N,...oh one...,MOS
+PHNM62_E,...oh two.,EOS
+PHNM62_N,...oh two...,MOS
+PHNM63_E,...oh three.,EOS
+PHNM63_N,...oh three...,MOS
+PHNM64_E,...oh four.,EOS
+PHNM64_N,...oh four...,MOS
+PHNM65_E,...oh five.,EOS
+PHNM65_N,...oh five...,MOS
+PHNM66_E,...oh six.,EOS
+PHNM66_N,...oh six...,MOS
+PHNM67_E,...oh seven.,EOS
+PHNM67_N,...oh seven...,MOS
+PHNM68_E,...oh eight.,EOS
+PHNM68_N,...oh eight...,MOS
+PHNM69_E,...oh nine.,EOS
+PHNM69_N,...oh nine...,MOS
+PHNM70_E,...hundred hours.,EOS
+PHHO01_E,...Easter.,EOS
+PHHO02_E,...Christmas.,EOS
+PHHO03_E,...Bank holiday.,EOS
+PHHO04_E,...New Year.,EOS
+PHMN01_N,...January...,MOS
+PHMN02_N,...February...,MOS
+PHMN03_N,...March...,MOS
+PHMN04_N,...April...,MOS
+PHMN05_N,...May...,MOS
+PHMN06_N,...June...,MOS
+PHMN07_N,...July...,MOS
+PHMN08_N,...August...,MOS
+PHMN09_N,...September...,MOS
+PHMN10_N,...October...,MOS
+PHMN11_N,...November...,MOS
+PHMN12_N,...December...,MOS
+PHTD01_E,...Sunday.,EOS
+PHTD02_E,...Monday.,EOS
+PHTD03_E,...Tuesday.,EOS
+PHTD04_E,...Wednesday.,EOS
+PHTD05_E,...Thursday.,EOS
+PHTD06_E,...Friday.,EOS
+PHTD07_E,...Saturday.,EOS
+PHTD08_E,...the weekend.,EOS
+PHTD09_E,...next week.,EOS
+PHNO01_N,...Platform One...,MOS
+PHNO01_E,...Platform One.,EOS
+PHNO02_N,...Platform Two...,MOS
+PHNO02_E,...Platform Two.,EOS
+PHNO03_N,...Platform Three...,MOS
+PHNO03_E,...Platform Three.,EOS
+PHNO04_N,...Platform Four...,MOS
+PHNO04_E,...Platform Four.,EOS
+PHNO05_N,...Platforms One and Two...,MOS
+PHNO05_E,...Platforms One and Two.,EOS
+PHNO06_N,...Platforms Three and Four...,MOS
+PHNO06_E,...Platforms Three and Four.,EOS
+PHPE01_N,...bikes...,MOS
+PHPE02_N,...skates...,MOS
+PHPE03_N,...scooters...,MOS
+PHPE04_N,...skate Boards...,MOS
+PHPE05_N,...alcohol,...MOS
+PHPH01_N,...smoking...,MOS
+PHPH02_N,...cycling...,MOS
+PHPH03_N,...leaving unattended luggage...,MOS
+PHPH04_N,...drinking...,MOS
+PHPH05_N,...spitting...,MOS
+PHPH06_N,...skating...,MOS
+PHLF01_N,...escalator...,MOS
+PHLF02_N,...escalators...,MOS
+PHLF03_N,...lift...,MOS
+PHLF04_N,...lifts...,MOS
+PHRW01_N,...Metro...,MOS
+PHRW01_E,...Metro.,EOS
+male/tvm/1Week,One week,EOS
+male/tvm/1Zone,One zone,EOS
+male/tvm/2Zones,Two zones,EOS
+male/tvm/4Weeks,Four weeks,EOS
+male/tvm/Adult,Adult,EOS
+male/tvm/AllZones,All zones,EOS
+male/tvm/Annual,Annual,EOS
+male/tvm/cc_only,"Sorry, this machine is currently only accepting credit and debit cards.",EOS
+male/tvm/Child,Child,EOS
+male/tvm/chippin,Please follow the instructions of the chip and pin terminal.,EOS
+male/tvm/Choose,Choose the zones you want to travel in from the information above.,EOS
+male/tvm/cho_sta,Please choose when you want your ticket to start.,EOS
+male/tvm/cho_tick,Please choose a ticket.,EOS
+male/tvm/ChTopUp,Please choose the amount you want to top up.,EOS
+male/tvm/cn_only,"Sorry, this machine is currently only accepting coins.",EOS
+male/tvm/cn_oy_pe,"Sorry, this machine is currently only accepting coins. Please pay with the exact amount as no change is available.",EOS
+male/tvm/Concess,Concessionary,EOS
+male/tvm/con_sel,Please confirm your selection.,EOS
+male/tvm/Explorer,Explorer,EOS
+male/tvm/Family,Family,EOS
+male/tvm/MetrTick,Metro ticket,EOS
+male/tvm/nex_hp,Visit nexus.org.uk for more information.,EOS
+male/tvm/no_cc,"Sorry, this machine is currently unable to accept credit and debit card payments.",EOS
+male/tvm/no_cc_pe,"Sorry, this machine is currently only accepting coins and notes. Please pay with the exact amount as no change is available.",EOS
+male/tvm/no_cn,"Sorry, this machine is currently not accepting coins.",EOS
+male/tvm/no_nt,"Sorry, this machine is currently not accepting notes.",EOS
+male/tvm/no_nt_pe,"Sorry, this machine is currently not accepting notes. Please pay with the exact amount as no change is available.",EOS
+male/tvm/ntltick,Network one tickets,EOS
+male/tvm/nt_only,"Sorry, this machine is currently only accepting notes",EOS
+male/tvm/nt_oy_pe,"Sorry, this machine is currently only accepting notes. Please pay with the exact amount as no change is available.",EOS
+male/tvm/othrtick,Other tickets,EOS
+male/tvm/payment,Please make your payment.,EOS
+male/tvm/pe,Please pay with the exact amount as no change is available.,EOS
+male/tvm/prevsc,This transaction can not be completed. Please present previous smartcard.,EOS
+male/tvm/printrec,Printing your receipt.,EOS
+male/tvm/printtic,Printing your ticket.,EOS
+male/tvm/reqRec,Do you require a ticket?,EOS
+male/tvm/SpecEvet,Special event,EOS
+male/tvm/Student,Student,EOS
+male/tvm/taketick,Please take your ticket and enjoy your journey.,EOS
+male/tvm/toppedup,Your smartcard has been topped up successfully.,EOS
+male/tvm/topup,Top up your smartcard.,EOS
+male/tvm/touCard,"To complete the transaction, please remember to touch your card to the reader after you've finished.",EOS
+male/tvm/touch,Please touch the orange reader to your right with your smartcard.,EOS
+male/tvm/transcan,This transaction could not be completed.,EOS
+male/tvm/Transfr,Transfair,EOS
+male/tvm/Un16PopC,Under 16 Pop card,EOS
+male/tvm/Under16,Under 16,EOS
+male/tvm/updatesc,"To update your smartcard, please touch it on the orange reader.",EOS
+male/tvm/y_choo,You have chosen...,BOS
+male/tvm/ZonA+B+C,"Zones A, B, and C",EOS
+male/tvm/Zone1,Zone 1,EOS
+male/tvm/Zone2,Zone 2,EOS
+male/tvm/Zone3,Zone 3,EOS
+male/tvm/Zone4,Zone 4,EOS
+male/tvm/Zone5,Zone 5,EOS
+male/tvm/ZoneA,Zone A,EOS
+male/tvm/ZoneB,Zone B,EOS
+male/tvm/ZoneC,Zone C,EOS
+male/tvm/Zones1+2,Zones 1 and 2,EOS
+male/tvm/Zones2+3,Zones 2 and 3,EOS
+male/tvm/Zones3+4,Zones 3 and 4,EOS
+male/tvm/Zones4+5,Zones 4 and 5,EOS
+male/tvm/ZonesA+B,Zones A and B,EOS
+male/tvm/ZonesB+C,Zones B and C,EOS
+manual/PUS01,"This is Metro control with information for all Metro passengers. Today, Thursday the 28th of February, due to essential maintenance, there will be a limited number of Regent Center to Pelaw and Monkseaton to Pelaw trains. Metro apologise for any inconvenience caused",
+manual/PUS02,"This is a customer announcement for all Metro passengers. Due to a serious overhead line fault at Pelaw, Metro service is currently suspended from Platform 2 Pelaw to Newcastle City Center, also from Monument towards Pelaw, and Sunderland, also South Shields. Passengers are advised this is a serious fault and passengers are advised to make alternative arrangements for travel until further notice. That is make alternative arrangements for travel until further notice. Please stand by for further announcements.",
+manual/PUS03,"This is a customer announcement for all Metro passengers. Due to a serious overhead line fault at Pelaw, Metro service will be suspended from Monument to Jarrow in both directions for the remainder of the evening. That's the Metro service will be suspended from Monument to Jarrow for the remainder of this evening. There is currently no Metro service from Pelaw to Monument also until further notice. We are currently operating a Metro shuttle service from Jarrow to South Shields. We are also operating a Metro shuttle service from Brockley Whins to South Hylton. Passengers are reminded this will be all evening. We do apologise for any inconvenience.",
+manual/PUS04,Testing one two three,
+manual/PUS04_1,"This is a customer announcement for all Metro passengers. Due to a serious overhead line fault in the Pelaw area, the Metro service will be suspended for the remainder of the evening from Monument to Jarrow. That's Monument to Jarrow. There is also currently no trains running between Monument and Pelaw via Platform 2. We are currently operating a Metro shuttle service from Jarrow to South Shields. We are also operating a Metro shuttle service from Blockey Whins to South Hylton. Passengers are advised to stand by for further announcements. Once again, the service will be suspended for the rest of the evening from Monument to Jarrow on Platform 1, also from Fellgate to Monument on Platform 2. A shuttle service is running from Jarrow to South Shields. Also a shuttle service between Brockley Whins and South Hylton. Once again, this is due to a serious overhead line fault.",
+manual/PUS05,Hey baby,
+manual/PUS05_1,This is a customer announcement for all Metro passengers. Metro service is still currently suspended from Monument to Jarrow due to a serious overhead line fault. There is also no Metro service between Fellgate and Central Station due to an overhead line fault. We are currently operating a service between Jarrow and South Shields. There is also a service between Blockey Whins and South Hylton. And also we now have a service between Gateshead Platform 2 and St James via the Coast. Passengers are reminded this is an ad hoc service and are not running to timetable. Once again this is due to a serious overhead line fault at Pelaw. We do apologise for any inconvenience.,
+manual/PUS06,"This is information for all Metro passengers. The Metro service is now operating to South Shields and towards Newcastle City Centre. However, the Metro service is currently still suspended between Pelaw and Fellgate due to a overhead line fault. We also currently have a serious police incident at Whitley Bay. There are currently no trains from St James to Whitley Bay via Platform 2. That's no current trains from Whitley Bay to St James via Platform 2. There's currently no trains between St James and Palmersville also on Platform 1. Passengers are advised to stand by for further announcements.",
+manual/PUS07,"This is a customer announcement for all Metro passengers. Further apologies for your disruptions this evening. There are two current incidents ongoing on the Metro system. An ongoing police incident at Whitley Bay, which is severely affecting the service from St James to South Shields. There is still currently no service between Whitley Bay and St James via Platform 2. There is also a serious overhead line fault currently at Pelaw. There is no service between Pelaw and Brockley Whins. There is a Metro shuttle service operating between Brockley Whins and South Hylton. There is currently a untimetabled service between the airport and Pelaw. Once again, the service is severely disrupted from St James to the coast. Also no service from Whitley Bay to St James. We do apologi-",
+manual/PUS08,"This is further information for all Metro passengers apologising for your disruptions this evening. This is caused by two serious disruptions at Pelaw and Whitley Bay. The Whitley Bay service is now fully operational, however this service is not running to timetable. That's the service from St James to South Shields is now fully operational, however not running to timetable. The Metro service is still currently suspended from Pelaw to Brockley Whins. We currently have a Metro shuttle service operating between Brockley Whins and South Hylton. The Airport service is running between Pelaw and the airport and the service is now running from St James to South Shields. However, this service is severely disrupted. We do apologise for any inconvenience.",
+manual/PUS08_1,Concourse,EOS
+manual/PUS09,10 seconds of silence,
+manual/PUS10,5 seconds of silence,
+manual/PUS11,48 seconds of silence,
+manual/PUS12,"Staff message, staff message. Can the NCA please contact passenger services. That's the NCA to contact passenger services. Thank you.",
+manual/PUS13,"This is information for all Metro passengers. On Saturday the 19th and Sunday the 20th of January, the Metro service will be suspended all day between Northumberland Park and Shiremoor in both directions. A bus replacement will be in operation. Also, on Sunday the 20th of January the Metro service will be suspended all day between Gateshead and South Shields in both directions. A bus replacement will be in operation calling at all stations in-between. There will be a Metro service between Heworth and South Hylton in both directions every 20 minutes. Metro apologise for any inconvenience.",
+manual/PUS14,"This is information for all Metro passengers. On Saturday the 19th and Sunday the 20th of January, there will be no Metro service between Northumberland Park and Shiremoor in both directions. This is to allow for essential maintenance. A bus replacement service will be in operation. Also, on Sunday the 20th of January only, there will be no Metro service between Gateshead and South Shields in both directions to allow for the installation of a new footbridge at Felling. Once again, a bus replacement service will be in operation. Metro apologise for any inconvenience.",
+manual/PUS15,"There is a plane now leaving from Newcastle to Stavanger, Norway. Unfortunately, you won't be on it. Culture, fjords, mountains, beaches, shopping, cuisine, lifestyle, nightlife, all can be enjoyed on a short break to beautiful Stavanger. So, when you get home, go to visitnorway.com and book yourself seats on the next available flight to a truly exotic land. Stavanger, less than two hours away, but a million miles from home.",
+manual/PUS16,"This is a customer announcement for all Metro passengers, informing you that the main lift at Monument is currently out of service until further notice. That's the main lift at Monument is currently out of service until further notice. Passengers are advised, who do need the lift, to either get off at Haymarket, Manors or Central Station. We do apologise for any inconvenience. Thank you.",
+manual/PUS17,"This is information for passengers at Benton. Could passengers at Benton please be aware that there is wet paint on the station. Can passengers please not lean against the walls or sit on the seats. Once again, can passengers at Benton please be aware that there is wet paint on the station. Can passengers please not sit on the seats or lean against the walls. Thank you.",
+manual/PUS18,"Information for all passengers. You are advised that the Metro service is suspended between Hebburn and South Shields in both directions due to vandalism. Once again, the Metro service is currently suspended between Jarrow and South Shields in both directions due to vandalism. Passengers are advised to seek alternate transport. We do apologise for the inconvenience and delay.",
+manual/PUS19,"Information for all passengers, you are advised that the Metro service is currently suspended between Hebburn and South Shields in both directions. This is due to vandalism. Once again, the Metro service is currently suspended between Hebburn and South Shields in both directions. This is due to vandalism. A bus replacement service has been ordered and further announcements will be made shortly. But once again, the Metro service is suspended between Hebburn and South Shields in both directions.",
+manual/PUS20,"This is a customer announcement for all Metro passengers. The Metro service is currently suspended from Gateshead Stadium to South Shields in both directions. That's Gateshead Stadium to South Shields in both directions. Metro service is also suspended from Gateshead Stadium to South Hylton in both directions. This is due to an ongoing train failure. Passengers are advised at this time to make alternative arrangements for travel. Go-Ahead Northern will accept your Metro tickets. Passengers are advised to stand by for further announcements. Once again, we do apologize for any inconvenience and delay.",
+manual/PUS21,"This is a customer announcement for all Metro passengers. Metro service has now resumed. All trains are now running to all destinations however are subject to severe delays. That's all trains are running to all destinations however are subject to severe delays. This was due to the earlier train failure. Once again, we do apologise for any inconvenience and delay.",
+manual/PUS22,This is a customer announcement for all Metro passengers. Metro service is now suspended from South Gosforth to Haymarket on platform 1. That's the Metro service is now suspended from South Gosforth to Haymarket on platform 1. This is due to a cracked rail. passengers are advised to stand by for further announcements. We do apologize for any inconvenience and delays,
+manual/PUS23,This is a customer announcement for all Metro passengers. The Metro service has now resumed between South Gosforth and Haymarket. The service is currently running at a speed restriction between South Gosforth and Haymarket. All trains are running to all destinations. We do apologise for any inconvenience and delay.,
+manual/PUS24,"This is a customer announcement for all metro passengers. Apologies for the delays to your service today. This is due to an ongoing speed restriction between Ilford Road and West Jesmond. All trains are running to all destinations, however are subject to delay. Once again, apologies for the delays to your service. This is due to an ongoing speed restriction between Ilford Road and West Jesmond. All trains are running to all destinations however are subject to delay and not to timetable. We do apologise for any inconvenience and delay.",
+manual/PUS25,This is a customer announcement for all metro passengers at St Peters. All trains will arrive and depart from platform 1 until further notice. All trains will arrive and depart from platform 1 until further notice. This is due to ongoing technical problems. We do apologise for any inconvenience and delay.,
+manual/PUS26,"This is a customer announcement for all Metro passengers. This Sunday the 25th of March, Metro will be operating single carriages only. That's this Sunday the 25th of March, Metro will be operating single carriages only. Passengers are reminded to stand at the departure end of the platform while awaiting the train. Thank you.",
+manual/PUS27,This is Metro Passenger Services with information for all passengers. You are advised that the Metro service is suspended between the airport and Kingston Park in both directions until further notice. Once again the service is currently suspended between the airport and Kingston Park in both directions until further notice. We do apologize for the inconvenience and delay.,
+manual/PUS28,This is a customer announcement for passengers at Kingston Park. All passengers will depart from Platform 2 for Newcastle City Centre. That's all trains for Newcastle City Centre will depart from Platform 2. Metro service is still currently suspended from the airport to Kingston Park in both directions. We do apologise for any inconvenience and delay.,
+manual/PUS29,"This is a customer announcement for all Metro passengers. The Metro service is suspended from the airport to Kingston Park in both directions. Once again, the Metro service is currently suspended from the airport to Kingston Park in both directions. We are currently operating a bus replacement service, the number 900. We do apologise for any inconvenience and delay.",
+manual/PUS32,"This is a customer announcement advising all Metro passengers that the service is currently suspended between St James and North Shields in both directions. This is due to an overhead line problem in the Walkergate area. A replacement bus service, the number 900, is in operation calling at all stations in the affected area between Monument and North Shields. For passenger information, St James station is currently closed. Metro apologise for any inconvenience and delay caused. Thank you.",
+manual/PUS33,"This is information for all Metro passengers. There is currently no Metro service between Benton and Monkseaton in both directions due to an overhead line obstruction at Shiremoor. Once again, there is currently no Metro service between Benton and Monkseaton in both directions due to an overhead line obstruction at Shiremoor. There are also delays to the South Shields and St James service also caused by the overhead line obstruction at Shiremoor. There is currently no bus replacement service but passengers are advised to stand by for an announcement We do apologise for this delay, this is caused by an overhead line obstruction at Shiremoor",
+manual/PUS34,"This is information for all Metro passengers. Due to extensive damage to the overhead line at Shiremoor, there will be no metro service between Benton and Tynemouth in either direction for the rest of the evening. Once again, due to extensive damage to the overhead line at Shiremoor, there will be no metro service between Benton and Tynemouth in either direction for the rest of the evening. Passengers requiring destinations between Benton and Tynemouth",
+PHCM01,"Normal Chime",BOS
+PHCM02,Warning Chime,BOS
+PAUSE1,400ms blank recording,MOS
+PAUSE2,1 second blank recording,MOS
+PAUSE3,300ms blank recording,MOS
+PAUSE4,500ms blank recording,MOS
