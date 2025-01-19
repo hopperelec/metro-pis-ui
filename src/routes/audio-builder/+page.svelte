@@ -1,46 +1,54 @@
 <script lang="ts">
-import PageTitle from "$lib/components/PageTitle.svelte";
-import {AUDIO_FILENAMES} from "$lib/audio.js";
-import {getSpecificTranscription, PARTS_OF_SPEECH_LONG} from "$lib/transcriptions.js";
-import ConcatenatedAudio from "$lib/components/ConcatenatedAudio.svelte";
+import { AUDIO_FILENAMES } from "$lib/audio.js";
 import AudioFullName from "$lib/components/AudioFullName.svelte";
+import ConcatenatedAudio from "$lib/components/ConcatenatedAudio.svelte";
+import PageTitle from "$lib/components/PageTitle.svelte";
+import {
+	PARTS_OF_SPEECH_LONG,
+	getSpecificTranscription,
+} from "$lib/transcriptions.js";
 
 type Row = {
-    category: keyof typeof AUDIO_FILENAMES;
-    filename: string;
+	category: keyof typeof AUDIO_FILENAMES;
+	filename: string;
 };
 
 let selection: Row[] = [];
-$: fullNames = selection.map(({category, filename}) => `${category}/${filename}`);
+$: fullNames = selection.map(
+	({ category, filename }) => `${category}/${filename}`,
+);
 
 const filters = {
-    categories: [] as (keyof typeof AUDIO_FILENAMES)[],
-    filename: "",
-    transcription: "",
-    partsOfSpeech: [] as number[],
+	categories: [] as (keyof typeof AUDIO_FILENAMES)[],
+	filename: "",
+	transcription: "",
+	partsOfSpeech: [] as number[],
 };
 
 let doAutoFilterPOS = false;
 function autoFilterPOS(doAutoFilterPOS: boolean, selection: Row[]) {
-    if (!doAutoFilterPOS) return;
-    if (selection.length === 0) {
-        filters.partsOfSpeech = [1,3];
-        return;
-    }
-    const {category,filename} = selection[selection.length - 1];
-    const lastPOS = getSpecificTranscription(`${category}/${filename}`, filename).partOfSpeech;
-    if (lastPOS === 1 || lastPOS === 2) {
-        filters.partsOfSpeech = [2,3];
-    } else if (lastPOS === 3) {
-        filters.partsOfSpeech = [1,3];
-    } else {
-        filters.partsOfSpeech = [1,2,3];
-    }
+	if (!doAutoFilterPOS) return;
+	if (selection.length === 0) {
+		filters.partsOfSpeech = [1, 3];
+		return;
+	}
+	const { category, filename } = selection[selection.length - 1];
+	const lastPOS = getSpecificTranscription(
+		`${category}/${filename}`,
+		filename,
+	).partOfSpeech;
+	if (lastPOS === 1 || lastPOS === 2) {
+		filters.partsOfSpeech = [2, 3];
+	} else if (lastPOS === 3) {
+		filters.partsOfSpeech = [1, 3];
+	} else {
+		filters.partsOfSpeech = [1, 2, 3];
+	}
 }
 $: autoFilterPOS(doAutoFilterPOS, selection);
 
-const ROWS = Object.entries(AUDIO_FILENAMES).flatMap(
-    ([category, filenames]) => filenames.map(filename => ({category,filename}))
+const ROWS = Object.entries(AUDIO_FILENAMES).flatMap(([category, filenames]) =>
+	filenames.map((filename) => ({ category, filename })),
 );
 </script>
 

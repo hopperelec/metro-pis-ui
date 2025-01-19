@@ -1,31 +1,47 @@
 <script lang="ts">
-import {AUDIO_FILENAMES, PAUSE_REGEX } from "$lib/audio";
+import { AUDIO_FILENAMES, PAUSE_REGEX } from "$lib/audio";
+import AudioFullName from "$lib/components/AudioFullName.svelte";
+import ConcatenatedAudio from "$lib/components/ConcatenatedAudio.svelte";
 import DotMatrix from "$lib/components/DotMatrix.svelte";
 import PageTitle from "$lib/components/PageTitle.svelte";
 import LINES, { type RailLine } from "$lib/lines";
 import STATIONS from "$lib/stations";
-import {UNOFFICIAL_ALIASES, getGenericTranscription, getSpecificTranscription } from "$lib/transcriptions";
-import { queryParamsState } from 'kit-query-params';
-import AudioFullName from "$lib/components/AudioFullName.svelte";
-import ConcatenatedAudio from "$lib/components/ConcatenatedAudio.svelte";
+import {
+	UNOFFICIAL_ALIASES,
+	getGenericTranscription,
+	getSpecificTranscription,
+} from "$lib/transcriptions";
+import { queryParamsState } from "kit-query-params";
 
 const options = queryParamsState({
-    schema: {
-        line: `<${Object.keys(LINES).join(',')}>`,
-        from: "string",
-        routeCode: "number",
-        female: "boolean",
-        departing: "boolean",
-    }
+	schema: {
+		line: `<${Object.keys(LINES).join(",")}>`,
+		from: "string",
+		routeCode: "number",
+		female: "boolean",
+		departing: "boolean",
+	},
 });
-$: line = (options.line && options.line in LINES) ? (options.line as RailLine) : "apt_shl";
+$: line =
+	options.line && options.line in LINES
+		? (options.line as RailLine)
+		: "apt_shl";
 
-$: routeCodes = new Set(LINES[line]?.filter(stop => stop.station === options.from).map(stop => stop.routeCode));
+$: routeCodes = new Set(
+	LINES[line]
+		?.filter((stop) => stop.station === options.from)
+		.map((stop) => stop.routeCode),
+);
 
 $: row = LINES[line]?.filter(
-	(stop) => stop.routeCode === options.routeCode && stop.station === options.from,
+	(stop) =>
+		stop.routeCode === options.routeCode && stop.station === options.from,
 )[0];
-$: filenames = row ? (options.departing ? row.departingAudio : row.approachingAudio) : [];
+$: filenames = row
+	? options.departing
+		? row.departingAudio
+		: row.approachingAudio
+	: [];
 $: fullNames = filenames.map((filename) => {
 	let category: string;
 	if (PAUSE_REGEX.test(filename)) category = "pause";
@@ -42,7 +58,11 @@ $: fullNames = filenames.map((filename) => {
 	}
 	return `${category}/${filename}`;
 });
-$: text = row ? (options.departing ? row.departingText : row.approachingText) : "";
+$: text = row
+	? options.departing
+		? row.departingText
+		: row.approachingText
+	: "";
 </script>
 
 <PageTitle title="Routes"/>

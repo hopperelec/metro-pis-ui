@@ -29,9 +29,16 @@ export const PARTS_OF_SPEECH_LONG = [
 
 export type Transcription = { transcription: string; partOfSpeech: number };
 
-export const OFFICIAL_TRANSCRIPTIONS = parseTranscriptionCsv(OfficialTranscriptionsCsv);
-export const UNOFFICIAL_TRANSCRIPTIONS = parseTranscriptionCsv(UnofficialTranscriptionsCsv);
-export const TRANSCRIPTIONS = { ...OFFICIAL_TRANSCRIPTIONS, ...UNOFFICIAL_TRANSCRIPTIONS };
+export const OFFICIAL_TRANSCRIPTIONS = parseTranscriptionCsv(
+	OfficialTranscriptionsCsv,
+);
+export const UNOFFICIAL_TRANSCRIPTIONS = parseTranscriptionCsv(
+	UnofficialTranscriptionsCsv,
+);
+export const TRANSCRIPTIONS = {
+	...OFFICIAL_TRANSCRIPTIONS,
+	...UNOFFICIAL_TRANSCRIPTIONS,
+};
 export const UNOFFICIAL_ALIASES = (
 	Papa.parse(UnofficialAliasesCsv as string).data as [string, string][]
 ).reduce(
@@ -51,7 +58,10 @@ export function getGenericTranscription(partialName: string) {
 	return { transcription: "", partOfSpeech: 0 };
 }
 
-export function getSpecificTranscription(fullName: string, partialName: string) {
+export function getSpecificTranscription(
+	fullName: string,
+	partialName: string,
+) {
 	return (
 		UNOFFICIAL_TRANSCRIPTIONS[fullName] ||
 		TRANSCRIPTIONS[UNOFFICIAL_ALIASES[fullName]] ||

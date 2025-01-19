@@ -1,5 +1,5 @@
 <script>
-    import PageTitle from "$lib/components/PageTitle.svelte";
+import PageTitle from "$lib/components/PageTitle.svelte";
 </script>
 
 <PageTitle title="Tyne and Wear Metro Class 599 PIS UI"/>

@@ -1,5 +1,4 @@
 <script lang="ts">
-
 export let src: string;
 export let fullName: string | undefined = undefined;
 

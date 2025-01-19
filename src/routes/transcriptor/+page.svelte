@@ -1,5 +1,6 @@
 <script lang="ts">
-import {AUDIO_FILENAMES} from "$lib/audio";
+import { AUDIO_FILENAMES } from "$lib/audio";
+import AudioFullName from "$lib/components/AudioFullName.svelte";
 import Diff from "$lib/components/Diff.svelte";
 import PageTitle from "$lib/components/PageTitle.svelte";
 import {
@@ -10,13 +11,14 @@ import {
 	getSpecificTranscription,
 } from "$lib/transcriptions";
 import Papa from "papaparse";
-import AudioFullName from "$lib/components/AudioFullName.svelte";
 
 const newTranscriptions: Record<string, Transcription> = {};
 for (const [category, filenames] of Object.entries(AUDIO_FILENAMES)) {
 	for (const filename of filenames) {
 		const fullName = `${category}/${filename}`;
-		newTranscriptions[fullName] = structuredClone(getSpecificTranscription(fullName, filename));
+		newTranscriptions[fullName] = structuredClone(
+			getSpecificTranscription(fullName, filename),
+		);
 	}
 }
 
@@ -61,9 +63,13 @@ function save() {
 	// Filter out aliases
 	const nonAliases = structuredClone(OFFICIAL_TRANSCRIPTIONS);
 	const aliases: Record<string, string> = {};
-	for (const [fullName, modifiedTranscription] of Object.entries(modifiedTranscriptions)) {
+	for (const [fullName, modifiedTranscription] of Object.entries(
+		modifiedTranscriptions,
+	)) {
 		let foundOriginal = false;
-		for (const [partialName, officialTranscription] of Object.entries(nonAliases)) {
+		for (const [partialName, officialTranscription] of Object.entries(
+			nonAliases,
+		)) {
 			if (transcriptionEquals(modifiedTranscription, officialTranscription)) {
 				aliases[fullName] = partialName;
 				delete modifiedTranscriptions[fullName];

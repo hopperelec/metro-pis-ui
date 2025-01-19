@@ -1,8 +1,8 @@
 <script lang="ts">
-import {FULL_NAMES_BY_PARTIAL_NAME} from "$lib/audio";
+import { FULL_NAMES_BY_PARTIAL_NAME } from "$lib/audio";
+import AudioFullName from "$lib/components/AudioFullName.svelte";
 import PageTitle from "$lib/components/PageTitle.svelte";
 import { PARTS_OF_SPEECH_LONG, TRANSCRIPTIONS } from "$lib/transcriptions";
-import AudioFullName from "$lib/components/AudioFullName.svelte";
 </script>
 
 <PageTitle title="All audio"/>

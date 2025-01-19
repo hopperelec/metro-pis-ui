@@ -1,9 +1,9 @@
 <script lang="ts">
-import {concat } from "$lib/audio";
+import { concat } from "$lib/audio";
 import Audio from "$lib/components/Audio.svelte";
 
 export let fullNames: string[];
-export let gapSeconds = 0.15
+export let gapSeconds = 0.15;
 </script>
 
 {#await concat(fullNames, gapSeconds)}
