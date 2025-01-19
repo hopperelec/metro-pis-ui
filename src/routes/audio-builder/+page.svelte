@@ -52,11 +52,14 @@ const ROWS = Object.entries(AUDIO_FILENAMES).flatMap(([category, filenames]) =>
 );
 
 function caseInsensitiveSearch(needle: string, haystack: string) {
-    return haystack.toLowerCase().includes(needle.toLowerCase());
+	return haystack.toLowerCase().includes(needle.toLowerCase());
 }
 </script>
 
-<PageTitle title="Audio builder"/>
+<PageTitle
+        title="Audio builder"
+        description="Piece together any audio files from the Tyne and Wear Metro Class 599s to create your own custom announcement"
+/>
 <main>
     <h2>Selection</h2>
     <div id="selection-container">

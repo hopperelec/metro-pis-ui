@@ -65,7 +65,10 @@ $: text = row
 	: "";
 </script>
 
-<PageTitle title="Routes"/>
+<PageTitle
+        title="Routes"
+        description="Listen to the announcements and view the dot matrix used on the Class 599s when travelling on Metro network"
+/>
 <main>
     <h2>Options</h2>
     <ul id="options">

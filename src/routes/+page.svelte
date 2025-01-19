@@ -2,7 +2,10 @@
 import PageTitle from "$lib/components/PageTitle.svelte";
 </script>
 
-<PageTitle title="Tyne and Wear Metro Class 599 PIS UI"/>
+<PageTitle
+        title="Tyne and Wear Metro Class 599 PIS UI" dontPrefix
+        description="A user-friendly way to browse and experiment with official PIS data for the Tyne and Wear Metro Class 599s"
+/>
 <main>
     <p>
         This tool provides a user-friendly way to browse and experiment with official PIS data taken from
@@ -32,7 +35,7 @@ import PageTitle from "$lib/components/PageTitle.svelte";
             <li>
                 <a href="routes">Routes</a>
                 lets you listen to the announcements and view the on-board dot matrix
-                for arriving at and departing each station on any possible route.
+                for arriving at and departing from each station on any possible route.
             </li>
             <li>
                 <a href="transcriptor">Transcriptor</a>

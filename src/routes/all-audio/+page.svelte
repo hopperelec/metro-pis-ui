@@ -5,7 +5,10 @@ import PageTitle from "$lib/components/PageTitle.svelte";
 import { PARTS_OF_SPEECH_LONG, TRANSCRIPTIONS } from "$lib/transcriptions";
 </script>
 
-<PageTitle title="All audio"/>
+<PageTitle
+        title="All audio"
+        description="Browse all audio files from the Tyne and Wear Metro Class 599s"
+/>
 <main>
     <table>
         <thead>

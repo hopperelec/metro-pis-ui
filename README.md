@@ -9,7 +9,7 @@ Freedom of Information requests made to Nexus (Tyne and Wear Transport Executive
 - **Audio Builder** lets you piece together any of those audio files to create your own custom announcement,
   and makes it easy to find the audio files you need to do so.
 - **Routes** lets you listen to the announcements and view the on-board dot matrix
-  for arriving at and departing each station on any possible route.
+  for arriving at and departing from each station on any possible route.
 - **Transcriptor** was mostly just made for creating the transcriptions for this website
   (modifying the official ones, and creating missing ones),
   but I've left it in for if you want to see all the changes that were made.

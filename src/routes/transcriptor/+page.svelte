@@ -104,7 +104,10 @@ function save() {
     {/each}
 </datalist>
 
-<PageTitle title="Transcriptor"/>
+<PageTitle
+        title="Transcriptor"
+        description="Transcribe the audio files from the Tyne and Wear Metro Class 599s"
+/>
 <main>
     <p>Click <button on:click={save}>Save</button> to download the updated unofficial-aliases.csv and unofficial-transcriptions.csv</p>
     <div id="table-container">
