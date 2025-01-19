@@ -105,7 +105,7 @@ function save() {
 </datalist>
 
 <PageTitle
-        title="Transcriptor"
+        title="Transcriber"
         description="Transcribe the audio files from the Tyne and Wear Metro Class 599s"
 />
 <main>

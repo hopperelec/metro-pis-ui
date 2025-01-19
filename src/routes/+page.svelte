@@ -38,7 +38,7 @@ import PageTitle from "$lib/components/PageTitle.svelte";
                 for arriving at and departing from each station on any possible route.
             </li>
             <li>
-                <a href="transcriptor">Transcriptor</a>
+                <a href="transcriber">Transcriber</a>
                 was mostly just made for creating the transcriptions for this website
                 (modifying the official ones, and creating missing ones),
                 but I've left it in for if you want to see all the changes that were made.
