@@ -37,32 +37,32 @@ $: row = LINES[line]?.filter(
 	(stop) =>
 		stop.routeCode === options.routeCode && stop.station === options.from,
 )[0];
-$: filenames = row
-	? options.departing
-		? row.departingAudio
-		: row.approachingAudio
-	: [];
-$: fullNames = filenames.map((filename) => {
-	let category: string;
-	if (PAUSE_REGEX.test(filename)) category = "pause";
-	else {
-		category = options.female ? "female" : "male";
-		if (!AUDIO_FILENAMES[category].includes(filename)) {
-			const alias = Object.entries(UNOFFICIAL_ALIASES).find(
-				([aliasFrom, aliasTo]) =>
-					aliasTo === filename && aliasFrom.startsWith(`${category}/`),
-			);
-			if (alias) filename = alias[0];
-			else return undefined;
-		}
-	}
-	return `${category}/${filename}`;
-});
-$: text = row
-	? options.departing
-		? row.departingText
-		: row.approachingText
-	: "";
+
+let text: string;
+let audioFiles: { category?: string; filename: string }[];
+$: if (row) {
+    text = options.departing ? row.departingText : row.approachingText;
+    const filenames = options.departing
+        ? row.departingAudio
+        : row.approachingAudio;
+    audioFiles = filenames.map((filename) => {
+        if (PAUSE_REGEX.test(filename)) return {category: "pause", filename };
+        const category = options.female ? "female" : "male";
+        if (!AUDIO_FILENAMES[category].includes(filename)) {
+            const fullNamePrefix = `${category}/`
+            const alias = Object.entries(UNOFFICIAL_ALIASES).find(
+                ([aliasFrom, aliasTo]) =>
+                    aliasTo === filename && aliasFrom.startsWith(fullNamePrefix),
+            );
+            if (!alias) return { filename };
+            filename = alias[0];
+        }
+        return { category, filename };
+    });
+} else {
+    text = "";
+    audioFiles = [];
+}
 </script>
 
 <PageTitle
@@ -144,24 +144,27 @@ $: text = row
 
     <br>
     <h2>Concatenated audio</h2>
-    {#if fullNames.length === 0}
+    {#if audioFiles.length === 0}
         <p class="selection-issue">Your current selection has no audio.</p>
     {:else}
-        <ConcatenatedAudio fullNames={fullNames.filter(x => x !== undefined)}/>
+        <ConcatenatedAudio fullNames={
+            audioFiles
+                .filter(x => x.category)
+                .map(x => `${x.category}/${x.filename}`)
+        }/>
     {/if}
 
     <br>
     <h2>Individual audio files</h2>
-    {#if fullNames.length === 0}
+    {#if audioFiles.length === 0}
         <p class="selection-issue">Your current selection has no audio.</p>
     {:else}
         <ol id="audio-files">
-            {#each Object.entries(fullNames) as [i,fullName]}
-                {@const partialName = filenames[+i]}
-                {@const { transcription } = fullName ? getSpecificTranscription(fullName, partialName) : getGenericTranscription(partialName)}
+            {#each audioFiles as {category,filename}}
+                {@const { transcription } = category ? getSpecificTranscription(category, filename) : getGenericTranscription(filename)}
                 <li>
-                    {#if fullName}
-                        <AudioFullName {fullName}/>
+                    {#if category}
+                        <AudioFullName fullName={`${category}/${filename}`} />
                     {:else}
                         <span>Missing audio file.</span>
                     {/if}

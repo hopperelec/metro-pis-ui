@@ -17,7 +17,7 @@ for (const [category, filenames] of Object.entries(AUDIO_FILENAMES)) {
 	for (const filename of filenames) {
 		const fullName = `${category}/${filename}`;
 		newTranscriptions[fullName] = structuredClone(
-			getSpecificTranscription(fullName, filename),
+			getSpecificTranscription(category, filename),
 		);
 	}
 }

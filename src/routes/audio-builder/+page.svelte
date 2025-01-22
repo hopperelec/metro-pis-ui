@@ -33,10 +33,7 @@ function autoFilterPOS(doAutoFilterPOS: boolean, selection: Row[]) {
 		return;
 	}
 	const { category, filename } = selection[selection.length - 1];
-	const lastPOS = getSpecificTranscription(
-		`${category}/${filename}`,
-		filename,
-	).partOfSpeech;
+	const lastPOS = getSpecificTranscription(category as string, filename).partOfSpeech;
 	if (lastPOS === 1 || lastPOS === 2) {
 		filters.partsOfSpeech = [2, 3];
 	} else if (lastPOS === 3) {
@@ -128,7 +125,7 @@ function caseInsensitiveSearch(needle: string, haystack: string) {
             <tbody>
             {#each ROWS as row}
                 {@const fullName = `${row.category}/${row.filename}`}
-                {@const {transcription,partOfSpeech} = getSpecificTranscription(fullName, row.filename)}
+                {@const {transcription,partOfSpeech} = getSpecificTranscription(row.category, row.filename)}
                 {#if (
                     (filters.categories.length === 0 || filters.categories.includes(row.category)) &&
                     (!filters.filename || caseInsensitiveSearch(filters.filename, row.filename)) &&

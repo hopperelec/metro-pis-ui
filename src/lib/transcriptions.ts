@@ -49,24 +49,25 @@ export const UNOFFICIAL_ALIASES = (
 	{} as Record<string, string>,
 );
 
-export function getGenericTranscription(partialName: string) {
-	if (partialName in TRANSCRIPTIONS) return TRANSCRIPTIONS[partialName];
-	if (partialName.endsWith("_ALT")) {
-		const altName = partialName.slice(0, -4);
+export function getGenericTranscription(filename: string) {
+	if (filename in TRANSCRIPTIONS) return TRANSCRIPTIONS[filename];
+	if (filename.endsWith("_ALT")) {
+		const altName = filename.slice(0, -4);
 		if (altName in TRANSCRIPTIONS) return TRANSCRIPTIONS[altName];
 	}
 	return { transcription: "", partOfSpeech: 0 };
 }
 
 export function getSpecificTranscription(
-	fullName: string,
-	partialName: string,
+	category: string,
+	filename: string,
 ) {
+	const fullName = `${category}/${filename}`;
 	return (
 		UNOFFICIAL_TRANSCRIPTIONS[fullName] ||
 		TRANSCRIPTIONS[UNOFFICIAL_ALIASES[fullName]] ||
-		UNOFFICIAL_TRANSCRIPTIONS[partialName] ||
-		TRANSCRIPTIONS[UNOFFICIAL_ALIASES[partialName]] ||
-		getGenericTranscription(partialName)
+		UNOFFICIAL_TRANSCRIPTIONS[filename] ||
+		TRANSCRIPTIONS[UNOFFICIAL_ALIASES[filename]] ||
+		getGenericTranscription(filename)
 	);
 }
