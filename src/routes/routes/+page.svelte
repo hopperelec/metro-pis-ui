@@ -72,7 +72,8 @@ $: text = row
 <main>
     <p>
         The data used on this page appears to be slightly out of date.
-        This says "The next station is" while the 599s actually just say "Next station is" nowadays.<br>
+        This says "The next station is" while the 599s actually just say "Next station is" nowadays.
+        "Cobalt" is also incorrectly spelled "Colbalt"<br>
         I could easily fix this, but there might be other discrepancies,
         and I would rather the data be outdated than outright incorrect.
     </p>
