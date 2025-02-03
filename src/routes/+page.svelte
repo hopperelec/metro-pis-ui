@@ -43,6 +43,12 @@ import PageTitle from "$lib/components/PageTitle.svelte";
                 (modifying the official ones, and creating missing ones),
                 but I've left it in for if you want to see all the changes that were made.
             </li>
+            <li>
+                <a href="font-creator">Font Creator</a>
+                is another tool mostly intended for development,
+                but it generates font files (OTF) from a bitmap representation of the dot matrix font
+                and previews what that font will look like in the "Routes" page.
+            </li>
         </ul>
     </nav>
 </main>

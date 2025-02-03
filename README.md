@@ -21,6 +21,9 @@ Once Nexus responds to those requests, I will probably add that data to this too
 - **Transcriber** was mostly just made for creating the transcriptions for this website
   (modifying the official ones, and creating missing ones),
   but I've left it in for if you want to see all the changes that were made.
+- **Font Creator** is another tool mostly intended for development,
+  but it generates font files (OTF) from a bitmap representation of the dot matrix font
+  and previews what that font will look like in the "Routes" page.
 
 ## Installation
 1. Clone this repository.

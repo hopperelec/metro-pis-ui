@@ -2,7 +2,7 @@
 import { AUDIO_FILENAMES, PAUSE_REGEX } from "$lib/audio";
 import AudioFullName from "$lib/components/AudioFullName.svelte";
 import ConcatenatedAudio from "$lib/components/ConcatenatedAudio.svelte";
-import DotMatrix from "$lib/components/DotMatrix.svelte";
+import MetrocarDotMatrix from "$lib/components/dot-matrix/MetrocarDotMatrix.svelte";
 import PageTitle from "$lib/components/PageTitle.svelte";
 import LINES, { type RailLine } from "$lib/lines";
 import STATIONS from "$lib/stations";
@@ -126,17 +126,17 @@ $: if (row) {
     </ul>
 
     <br>
-    <h2>Dot matrix</h2>
-    <p>
-        This does not actually render as a dot matrix (yet!).
-        Hopefully I will be able to obtain the correct font at some point,
-        otherwise I would need to re-create it pixel-by-pixel manually.
-    </p>
-    <br>
+    <h2>Dot matrices</h2>
     {#if text}
+        <p>Text:</p>
+        <p id="text-preview">{text}</p>
+        <br>
+        <p>
+            The left version is the font version (try selecting it!)
+            and the right version is the SVG version.
+        </p>
         <div id="dot-matrix-container">
-            <DotMatrix {text}/>
-            <p>{text}</p>
+            <MetrocarDotMatrix {text}/>
         </div>
     {:else}
         <p class="selection-issue">Your current selection has no text.</p>
@@ -187,10 +187,10 @@ main {
 #dot-matrix-container {
   display: flex;
   align-items: center;
+}
 
-  & > p {
-    padding-left: 1em;
-  }
+#text-preview {
+  font-family: monospace;
 }
 
 #audio-files {
