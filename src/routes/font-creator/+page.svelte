@@ -1,37 +1,41 @@
 <script lang="ts">
-    import PageTitle from '$lib/components/PageTitle.svelte';
-    import DotMatrixImage from '$lib/media/dot-matrix.webp';
-    import FontDotMatrix from "$lib/components/dot-matrix/FontDotMatrix.svelte";
-    import SVGDotMatrix from "$lib/components/dot-matrix/SVGDotMatrix.svelte";
-    import {type DotMatrixFont, generateOTF, parseImage} from "$lib/components/dot-matrix";
+import PageTitle from "$lib/components/PageTitle.svelte";
+import {
+	type DotMatrixFont,
+	generateOTF,
+	parseImage,
+} from "$lib/components/dot-matrix";
+import FontDotMatrix from "$lib/components/dot-matrix/FontDotMatrix.svelte";
+import SVGDotMatrix from "$lib/components/dot-matrix/SVGDotMatrix.svelte";
+import DotMatrixImage from "$lib/media/dot-matrix.webp";
 
-    // Input data
-    let imageFiles: FileList;
-    let expectedCharacters: string;
-    let isGenerated: boolean;
+// Input data
+let imageFiles: FileList;
+let expectedCharacters: string;
+let isGenerated: boolean;
 
-    // OTF style options
-    let circularDots = true;
-    let dotSize = .5;
-    let characterSpacing = 1;
-    let spaceWidth = 5;
+// OTF style options
+let circularDots = true;
+let dotSize = 0.5;
+let characterSpacing = 1;
+let spaceWidth = 5;
 
-    // Output
-    let font: DotMatrixFont;
-    let otfURL: string;
+// Output
+let font: DotMatrixFont;
+let otfURL: string;
 
-    function generate() {
-        isGenerated = true;
-        font = parseImage(image, expectedCharacters, spaceWidth);
-        otfURL = generateOTF(font, circularDots, dotSize, characterSpacing);
-        document.fonts.add(new FontFace('DotMatrix', `url(${otfURL})`));
-    }
+function generate() {
+	isGenerated = true;
+	font = parseImage(image, expectedCharacters, spaceWidth);
+	otfURL = generateOTF(font, circularDots, dotSize, characterSpacing);
+	document.fonts.add(new FontFace("DotMatrix", `url(${otfURL})`));
+}
 
-    let image: HTMLImageElement;
-    $: if (imageFiles && imageFiles[0]) {
-        image = new Image();
-        image.src = URL.createObjectURL(imageFiles[0]);
-    }
+let image: HTMLImageElement;
+$: if (imageFiles?.[0]) {
+	image = new Image();
+	image.src = URL.createObjectURL(imageFiles[0]);
+}
 </script>
 
 <PageTitle

@@ -33,7 +33,10 @@ function autoFilterPOS(doAutoFilterPOS: boolean, selection: Row[]) {
 		return;
 	}
 	const { category, filename } = selection[selection.length - 1];
-	const lastPOS = getSpecificTranscription(category as string, filename).partOfSpeech;
+	const lastPOS = getSpecificTranscription(
+		category as string,
+		filename,
+	).partOfSpeech;
 	if (lastPOS === 1 || lastPOS === 2) {
 		filters.partsOfSpeech = [2, 3];
 	} else if (lastPOS === 3) {

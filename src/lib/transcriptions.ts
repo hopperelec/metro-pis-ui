@@ -58,10 +58,7 @@ export function getGenericTranscription(filename: string) {
 	return { transcription: "", partOfSpeech: 0 };
 }
 
-export function getSpecificTranscription(
-	category: string,
-	filename: string,
-) {
+export function getSpecificTranscription(category: string, filename: string) {
 	const fullName = `${category}/${filename}`;
 	return (
 		UNOFFICIAL_TRANSCRIPTIONS[fullName] ||

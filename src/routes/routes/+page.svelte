@@ -2,8 +2,8 @@
 import { AUDIO_FILENAMES, PAUSE_REGEX } from "$lib/audio";
 import AudioFullName from "$lib/components/AudioFullName.svelte";
 import ConcatenatedAudio from "$lib/components/ConcatenatedAudio.svelte";
-import MetrocarDotMatrix from "$lib/components/dot-matrix/MetrocarDotMatrix.svelte";
 import PageTitle from "$lib/components/PageTitle.svelte";
+import MetrocarDotMatrix from "$lib/components/dot-matrix/MetrocarDotMatrix.svelte";
 import LINES, { type RailLine } from "$lib/lines";
 import STATIONS from "$lib/stations";
 import {
@@ -41,27 +41,27 @@ $: row = LINES[line]?.filter(
 let text: string;
 let audioFiles: { category?: string; filename: string }[];
 $: if (row) {
-    text = options.departing ? row.departingText : row.approachingText;
-    const filenames = options.departing
-        ? row.departingAudio
-        : row.approachingAudio;
-    audioFiles = filenames.map((filename) => {
-        if (PAUSE_REGEX.test(filename)) return {category: "pause", filename };
-        const category = options.female ? "female" : "male";
-        if (!AUDIO_FILENAMES[category].includes(filename)) {
-            const fullNamePrefix = `${category}/`
-            const alias = Object.entries(UNOFFICIAL_ALIASES).find(
-                ([aliasFrom, aliasTo]) =>
-                    aliasTo === filename && aliasFrom.startsWith(fullNamePrefix),
-            );
-            if (!alias) return { filename };
-            filename = alias[0];
-        }
-        return { category, filename };
-    });
+	text = options.departing ? row.departingText : row.approachingText;
+	const filenames = options.departing
+		? row.departingAudio
+		: row.approachingAudio;
+	audioFiles = filenames.map((filename) => {
+		if (PAUSE_REGEX.test(filename)) return { category: "pause", filename };
+		const category = options.female ? "female" : "male";
+		if (!AUDIO_FILENAMES[category].includes(filename)) {
+			const fullNamePrefix = `${category}/`;
+			const alias = Object.entries(UNOFFICIAL_ALIASES).find(
+				([aliasFrom, aliasTo]) =>
+					aliasTo === filename && aliasFrom.startsWith(fullNamePrefix),
+			);
+			if (!alias) return { filename };
+			filename = alias[0];
+		}
+		return { category, filename };
+	});
 } else {
-    text = "";
-    audioFiles = [];
+	text = "";
+	audioFiles = [];
 }
 </script>
 
