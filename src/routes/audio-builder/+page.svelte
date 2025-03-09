@@ -3,49 +3,45 @@ import { AUDIO_FILENAMES } from "$lib/audio.js";
 import AudioFullName from "$lib/components/AudioFullName.svelte";
 import ConcatenatedAudio from "$lib/components/ConcatenatedAudio.svelte";
 import PageTitle from "$lib/components/PageTitle.svelte";
-import {
-	PARTS_OF_SPEECH_LONG,
-	getSpecificTranscription,
-} from "$lib/transcriptions.js";
+import { PARTS_OF_SPEECH_LONG, getSpecificTranscription } from "$lib/transcriptions.js";
 
 type Row = {
 	category: keyof typeof AUDIO_FILENAMES;
 	filename: string;
 };
 
-let selection: Row[] = [];
-$: fullNames = selection.map(
+let selection: Row[] = $state([]);
+let fullNames = $derived(selection.map(
 	({ category, filename }) => `${category}/${filename}`,
-);
+));
 
-const filters = {
+const filters = $state({
 	categories: [] as (keyof typeof AUDIO_FILENAMES)[],
 	filename: "",
 	transcription: "",
 	partsOfSpeech: [] as number[],
-};
+});
 
-let doAutoFilterPOS = false;
-function autoFilterPOS(doAutoFilterPOS: boolean, selection: Row[]) {
+let doAutoFilterPOS = $state(false);
+$effect(() => {
 	if (!doAutoFilterPOS) return;
-	if (selection.length === 0) {
-		filters.partsOfSpeech = [1, 3];
-		return;
-	}
-	const { category, filename } = selection[selection.length - 1];
-	const lastPOS = getSpecificTranscription(
-		category as string,
-		filename,
-	).partOfSpeech;
-	if (lastPOS === 1 || lastPOS === 2) {
-		filters.partsOfSpeech = [2, 3];
-	} else if (lastPOS === 3) {
-		filters.partsOfSpeech = [1, 3];
-	} else {
-		filters.partsOfSpeech = [1, 2, 3];
-	}
-}
-$: autoFilterPOS(doAutoFilterPOS, selection);
+    // If auto-filter is enabled, change the filter whenever the selection changes
+    let lastPOS = 3;
+	if (selection.length > 0) {
+        const {category, filename} = selection[selection.length - 1];
+        lastPOS = getSpecificTranscription(
+            category as string,
+            filename,
+        ).partOfSpeech;
+    }
+    if (lastPOS === 3) {
+        filters.partsOfSpeech = [1, 3];
+    } else if (lastPOS === 1 || lastPOS === 2) {
+        filters.partsOfSpeech = [2, 3];
+    } else {
+        filters.partsOfSpeech = [1, 2, 3];
+    }
+});
 
 const ROWS = Object.entries(AUDIO_FILENAMES).flatMap(([category, filenames]) =>
 	filenames.map((filename) => ({ category, filename })),
@@ -66,12 +62,12 @@ function caseInsensitiveSearch(needle: string, haystack: string) {
         {#if selection.length === 0}
             <p class="selection-issue">No audio files selected</p>
         {:else}
-            <button on:click={() => selection = []}>Clear selection</button>
+            <button onclick={() => selection = []}>Clear selection</button>
             <ol id="selection">
                 {#each Object.entries(fullNames) as [key, fullName] (key)}
                     <li>
                         <AudioFullName {fullName}/>
-                        <button on:click={() => selection = selection.toSpliced(+key, 1)}>❌</button>
+                        <button onclick={() => selection = selection.toSpliced(+key, 1)}>❌</button>
                     </li>
                 {/each}
             </ol>
@@ -143,7 +139,7 @@ function caseInsensitiveSearch(needle: string, haystack: string) {
                         <td><AudioFullName {fullName} hideFullName/></td>
                         <td>
                             <button type="button"
-                                    on:click={() => selection = [...selection, row]}
+                                    onclick={() => selection = [...selection, row]}
                             >Add</button>
                         </td>
                     </tr>

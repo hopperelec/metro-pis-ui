@@ -1,7 +1,9 @@
 <script lang="ts">
-export let title: string;
-export let description: string;
-export let dontPrefix = false;
+let { title, description, dontPrefix = false }: {
+    title: string;
+    description: string;
+    dontPrefix?: boolean;
+} = $props();
 </script>
 
 <svelte:head>

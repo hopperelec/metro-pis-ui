@@ -1,6 +1,12 @@
+<script lang="ts">
+    import type {Snippet} from "svelte";
+
+    let { children }: { children: Snippet } = $props();
+</script>
+
 <div id="layout-container">
     <div id="slot-container">
-        <slot/>
+        {@render children()}
     </div>
     <footer>
         This website is open-source. You can view all of it's the code, report any issues,

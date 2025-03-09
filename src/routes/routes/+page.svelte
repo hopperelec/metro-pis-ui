@@ -1,19 +1,18 @@
 <script lang="ts">
-import { AUDIO_FILENAMES, PAUSE_REGEX } from "$lib/audio";
+    import {AUDIO_FILENAMES, PAUSE_REGEX} from "$lib/audio";
 import AudioFullName from "$lib/components/AudioFullName.svelte";
 import ConcatenatedAudio from "$lib/components/ConcatenatedAudio.svelte";
 import PageTitle from "$lib/components/PageTitle.svelte";
 import MetrocarDotMatrix from "$lib/components/dot-matrix/MetrocarDotMatrix.svelte";
 import LINES, { type RailLine } from "$lib/lines";
 import STATIONS from "$lib/stations";
-import {
-	UNOFFICIAL_ALIASES,
-	getGenericTranscription,
-	getSpecificTranscription,
-} from "$lib/transcriptions";
+    import {
+        getGenericTranscription,
+        getSpecificTranscription, UNOFFICIAL_ALIASES,
+    } from "$lib/transcriptions";
 import { queryParamsState } from "kit-query-params";
 
-const options = queryParamsState({
+const options = $state(queryParamsState({
 	schema: {
 		line: `<${Object.keys(LINES).join(",")}>`,
 		from: "string",
@@ -21,48 +20,43 @@ const options = queryParamsState({
 		female: "boolean",
 		departing: "boolean",
 	},
-});
-$: line =
-	options.line && options.line in LINES
-		? (options.line as RailLine)
-		: "apt_shl";
+}));
 
-$: routeCodes = new Set(
-	LINES[line]
-		?.filter((stop) => stop.station === options.from)
+let lineName = $derived(
+    options.line && options.line in LINES
+		? (options.line as RailLine)
+		: "apt_shl"
+);
+let line = $derived(LINES[lineName]);
+
+let routeCodes = $derived(new Set(
+    line
+		.filter((stop) => stop.station === options.from)
 		.map((stop) => stop.routeCode),
+));
+
+let row = $derived(
+    LINES[lineName].filter((stop) => stop.routeCode === options.routeCode && stop.station === options.from)[0]
 );
 
-$: row = LINES[line]?.filter(
-	(stop) =>
-		stop.routeCode === options.routeCode && stop.station === options.from,
-)[0];
-
-let text: string;
-let audioFiles: { category?: string; filename: string }[];
-$: if (row) {
-	text = options.departing ? row.departingText : row.approachingText;
-	const filenames = options.departing
-		? row.departingAudio
-		: row.approachingAudio;
-	audioFiles = filenames.map((filename) => {
-		if (PAUSE_REGEX.test(filename)) return { category: "pause", filename };
-		const category = options.female ? "female" : "male";
-		if (!AUDIO_FILENAMES[category].includes(filename)) {
-			const fullNamePrefix = `${category}/`;
-			const alias = Object.entries(UNOFFICIAL_ALIASES).find(
-				([aliasFrom, aliasTo]) =>
-					aliasTo === filename && aliasFrom.startsWith(fullNamePrefix),
-			);
-			if (!alias) return { filename };
-			filename = alias[0];
-		}
-		return { category, filename };
-	});
-} else {
-	text = "";
-	audioFiles = [];
-}
+let text = $derived(row ? (options.departing ? row.departingText : row.approachingText) : "");
+let audioFilenames = $derived(row ? (options.departing ? row.departingAudio : row.approachingAudio) : []);
+let audioFiles: { category?: string; filename: string }[] = $derived(
+    audioFilenames.map((filename) => {
+        if (PAUSE_REGEX.test(filename)) return { category: "pause", filename };
+        const category = options.female ? "female" : "male";
+        if (!AUDIO_FILENAMES[category].includes(filename)) {
+            const fullNamePrefix = `${category}/`;
+            const alias = Object.entries(UNOFFICIAL_ALIASES).find(
+                ([aliasFrom, aliasTo]) =>
+                    aliasTo === filename && aliasFrom.startsWith(fullNamePrefix),
+            );
+            if (!alias) return { filename };
+            filename = alias[0];
+        }
+        return { category, filename };
+    })
+)
 </script>
 
 <PageTitle
@@ -92,7 +86,7 @@ $: if (row) {
         <li>
             <label for="from">From</label>
             <select id="from" bind:value={options.from}>
-                {#each new Set(LINES[line]?.map(stop => stop.station)) as possibleStation}
+                {#each new Set(LINES[lineName].map(stop => stop.station)) as possibleStation}
                     <option value={possibleStation}>{possibleStation} - {STATIONS[possibleStation]}</option>
                 {/each}
             </select>

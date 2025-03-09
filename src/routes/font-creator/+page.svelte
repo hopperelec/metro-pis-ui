@@ -10,32 +10,35 @@ import SVGDotMatrix from "$lib/components/dot-matrix/SVGDotMatrix.svelte";
 import DotMatrixImage from "$lib/media/dot-matrix.webp";
 
 // Input data
-let imageFiles: FileList;
-let expectedCharacters: string;
-let isGenerated: boolean;
+let imageFiles: FileList | undefined = $state();
+let expectedCharacters = $state("");
+let isGenerated = $state(false);
 
 // OTF style options
-let circularDots = true;
-let dotSize = 0.5;
-let characterSpacing = 1;
-let spaceWidth = 5;
+let circularDots = $state(true);
+let dotSize = $state(0.5);
+let characterSpacing = $state(1);
+let spaceWidth = $state(5);
 
 // Output
-let font: DotMatrixFont;
-let otfURL: string;
+let font: DotMatrixFont | undefined = $state();
+let otfURL: string | undefined = $state();
 
 function generate() {
+    if (!image || !expectedCharacters) return;
 	isGenerated = true;
 	font = parseImage(image, expectedCharacters, spaceWidth);
 	otfURL = generateOTF(font, circularDots, dotSize, characterSpacing);
 	document.fonts.add(new FontFace("DotMatrix", `url(${otfURL})`));
 }
 
-let image: HTMLImageElement;
-$: if (imageFiles?.[0]) {
-	image = new Image();
-	image.src = URL.createObjectURL(imageFiles[0]);
-}
+let image: HTMLImageElement | undefined = $derived.by(() => {
+    if (imageFiles?.[0]) {
+        const result = new Image();
+        result.src = URL.createObjectURL(imageFiles[0]);
+        return result;
+    }
+});
 </script>
 
 <PageTitle
@@ -60,14 +63,14 @@ $: if (imageFiles?.[0]) {
             Below is the image used for the <a href="/routes">Routes</a> page.
             Note that some characters intentionally have a gap on one side.
         </p>
-        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <!-- svelte-ignore a11y_img_redundant_alt -->
         <img src={DotMatrixImage} alt="Example dot matrix image"/>
     </div>
 
     <p>Once you have an image, upload it below:</p>
     <input type="file" accept="image/*" bind:files={imageFiles}/>
     {#if image}
-        <!-- svelte-ignore a11y-img-redundant-alt -->
+        <!-- svelte-ignore a11y_img_redundant_alt -->
         <img src={image.src} alt="Uploaded image"/>
     {/if}
     <p>And type the characters in the order they appear in the image:</p>
@@ -96,7 +99,7 @@ $: if (imageFiles?.[0]) {
         </label>
     </div>
 
-    <button on:click={generate} disabled={!image || !expectedCharacters}>Generate</button>
+    <button onclick={generate} disabled={!image || !expectedCharacters}>Generate</button>
 
     {#if isGenerated}
         <div>

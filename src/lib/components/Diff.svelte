@@ -1,10 +1,9 @@
 <script lang="ts">
 import { diffWords } from "diff";
 
-export let oldStr: string;
-export let newStr: string;
+let { oldStr, newStr }: { oldStr: string, newStr: string } = $props();
 
-$: diff = diffWords(oldStr, newStr);
+let diff = $derived(diffWords(oldStr, newStr));
 </script>
 
 {#if diff.some(({ added, removed }) => added || removed)}

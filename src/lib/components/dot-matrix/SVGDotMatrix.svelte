@@ -7,23 +7,33 @@ import {
 } from "$lib/components/dot-matrix";
 
 const EMPTY_COLUMN = new Array(DOT_MATRIX_HEIGHT).fill(false);
+const EMPTY_DISPLAY = new Array(DOT_MATRIX_WIDTH).fill(EMPTY_COLUMN);
 
-export let font: DotMatrixFont;
-export let text: string;
-export let circularDots = true;
-export let dotSize = 0.5;
-export let characterSpacing = 1;
-export let mode: "scroll" | "center" | "full" = "center";
-export let scrollSpeed = 50; // in columns per second
-export let scrollResetTime = 1000; // in milliseconds
+let {
+    font,
+    text,
+    circularDots = true,
+    dotSize = 0.5,
+    characterSpacing = 1,
+    mode = "center",
+    scrollSpeed = 50,
+    scrollResetTime = 1000
+}: {
+    font: DotMatrixFont;
+    text: string;
+    circularDots?: boolean;
+    dotSize?: number;
+    characterSpacing?: number;
+    mode?: "scroll" | "center" | "full";
+    scrollSpeed?: number; // in columns per second
+    scrollResetTime?: number; // in milliseconds
+} = $props();
 
-$: scrollResetColumns = scrollResetTime / scrollSpeed;
-$: spacing = new Array(characterSpacing).fill(EMPTY_COLUMN);
+let scrollResetColumns = $derived(scrollResetTime / scrollSpeed);
+let spacing = $derived(new Array(characterSpacing).fill(EMPTY_COLUMN));
 
-let renderedText: DotMatrixGlyph;
-function renderText() {
-	renderedText = text
-		.split("")
+let renderedText: DotMatrixGlyph = $derived(
+    text.split("")
 		.flatMap((character) => {
 			if (!(character in font)) {
 				if (" " in font) {
@@ -37,18 +47,17 @@ function renderText() {
 			}
 			return [...spacing, ...font[character]];
 		})
-		.slice(1);
-}
-$: if (text && spacing) renderText();
+		.slice(1)
+);
 
-$: numScrollColumns = renderedText.length + DOT_MATRIX_WIDTH;
+let numScrollColumns = $derived(renderedText.length + DOT_MATRIX_WIDTH);
 
-let renderedDisplay: boolean[][];
+let renderedDisplay = $state(EMPTY_DISPLAY);
 let scrollInterval: NodeJS.Timeout;
-function update() {
+$effect(() => {
 	clearInterval(scrollInterval);
 	if (mode === "scroll") {
-		renderedDisplay = new Array(DOT_MATRIX_WIDTH).fill(EMPTY_COLUMN);
+		renderedDisplay = EMPTY_DISPLAY.slice();
 		let x = 0;
 		scrollInterval = setInterval(() => {
 			if (x < numScrollColumns + scrollResetColumns) {
@@ -62,18 +71,15 @@ function update() {
 		}, 1000 / scrollSpeed);
 	} else if (mode === "center") {
 		const padding = (DOT_MATRIX_WIDTH - renderedText.length) / 2;
-		const paddingLeft = Math.floor(padding);
-		const paddingRight = Math.ceil(padding);
 		renderedDisplay = [
-			...new Array(paddingLeft).fill(EMPTY_COLUMN),
+			...new Array(Math.floor(padding)).fill(EMPTY_COLUMN),
 			...renderedText,
-			...new Array(paddingRight).fill(EMPTY_COLUMN),
+			...new Array(Math.ceil(padding)).fill(EMPTY_COLUMN),
 		];
 	} else {
 		renderedDisplay = renderedText;
 	}
-}
-$: if (renderedText) update();
+});
 </script>
 
 <div style:--dot-matrix-height={DOT_MATRIX_HEIGHT}>

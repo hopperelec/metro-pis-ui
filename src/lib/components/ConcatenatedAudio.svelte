@@ -2,8 +2,10 @@
 import { concat } from "$lib/audio";
 import Audio from "$lib/components/Audio.svelte";
 
-export let fullNames: string[];
-export let gapSeconds = 0.15;
+let { fullNames, gapSeconds = 0.15 }: {
+    fullNames: string[];
+    gapSeconds?: number;
+} = $props();
 </script>
 
 {#await concat(fullNames, gapSeconds)}

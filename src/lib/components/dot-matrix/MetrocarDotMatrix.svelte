@@ -9,15 +9,15 @@ import {
 import DotMatrixImage from "$lib/media/dot-matrix.webp";
 import { onMount } from "svelte";
 
-export let text: string;
+let { text }: { text: string } = $props();
 // Text is split into pages by <>
 // If the text is just one page, scroll the text
 // Otherwise, cycle through each page, showing it centered for 2 seconds
-$: pages = text.split("<>");
+let pages = $derived(text.split("<>"));
 
-let currentPageNumber = 0;
-let scrollInterval: NodeJS.Timeout;
-function updatePages() {
+let currentPageNumber = $state(0);
+let scrollInterval: NodeJS.Timeout | undefined;
+$effect(() => {
 	clearInterval(scrollInterval);
 	if (pages.length > 1) {
 		currentPageNumber = 0;
@@ -25,10 +25,9 @@ function updatePages() {
 			currentPageNumber = (currentPageNumber + 1) % pages.length;
 		}, 2000);
 	}
-}
-$: if (pages) updatePages();
+});
 
-let font: DotMatrixFont;
+let font: DotMatrixFont | undefined = $state();
 onMount(() => {
 	const image = new Image();
 	image.onload = () => {

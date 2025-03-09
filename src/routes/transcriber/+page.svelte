@@ -11,22 +11,31 @@ import {
 	getSpecificTranscription,
 } from "$lib/transcriptions";
 import Papa from "papaparse";
+import {SvelteMap} from "svelte/reactivity";
 
-const newTranscriptions: Record<string, Transcription> = {};
+const newTranscriptions = new SvelteMap<string, Transcription>();
 for (const [category, filenames] of Object.entries(AUDIO_FILENAMES)) {
 	for (const filename of filenames) {
 		const fullName = `${category}/${filename}`;
-		newTranscriptions[fullName] = structuredClone(
-			getSpecificTranscription(category, filename),
-		);
+		newTranscriptions.set(
+            fullName,
+            structuredClone(getSpecificTranscription(category, filename))
+        );
 	}
 }
 
-let currentFocused: string | undefined;
-$: suggestedTranscriptions = new Set(
-	Object.entries(newTranscriptions)
-		.filter(([fullName, _]) => fullName !== currentFocused) // To avoid suggesting the current input
-		.map(([_, { transcription }]) => transcription),
+function getTranscription(fullName: string) {
+    // Used to assert that the key exists
+    return newTranscriptions.get(fullName) as Transcription;
+}
+
+let currentFocused = $state<string | undefined>();
+let suggestedTranscriptions = $derived(
+    new Set(
+        Object.entries(newTranscriptions)
+            .filter(([fullName, _]) => fullName !== currentFocused) // To avoid suggesting the current input
+            .map(([_, { transcription }]) => transcription),
+    )
 );
 
 function transcriptionEquals(a: Transcription, b: Transcription | undefined) {
@@ -50,13 +59,14 @@ function save() {
 	for (const [category, filenames] of Object.entries(AUDIO_FILENAMES)) {
 		for (const filename of filenames) {
 			const fullName = `${category}/${filename}`;
+            const newTranscription = getTranscription(fullName);
 			if (
 				!transcriptionEquals(
-					newTranscriptions[fullName],
+                    newTranscription,
 					OFFICIAL_TRANSCRIPTIONS[filename],
 				)
 			) {
-				modifiedTranscriptions[fullName] = newTranscriptions[fullName];
+				modifiedTranscriptions[fullName] = newTranscription;
 			}
 		}
 	}
@@ -109,7 +119,7 @@ function save() {
         description="Transcribe the audio files from the Tyne and Wear Metro Class 599s"
 />
 <main>
-    <p>Click <button on:click={save}>Save</button> to download the updated unofficial-aliases.csv and unofficial-transcriptions.csv</p>
+    <p>Click <button onclick={save}>Save</button> to download the updated unofficial-aliases.csv and unofficial-transcriptions.csv</p>
     <div id="table-container">
         <table>
             <thead>
@@ -126,39 +136,40 @@ function save() {
                 {#each filenames as filename}
                     {@const originalTranscription = OFFICIAL_TRANSCRIPTIONS[filename]}
                     {@const fullName = `${category}/${filename}`}
+                    {@const newTranscription = getTranscription(fullName)}
                     <tr
-                            class:modified={!transcriptionEquals(newTranscriptions[fullName], originalTranscription)}
-                            class:incomplete={(newTranscriptions[fullName].transcription === '') !== (newTranscriptions[fullName].partOfSpeech === 0)}
+                            class:modified={!transcriptionEquals(newTranscription, originalTranscription)}
+                            class:incomplete={(newTranscription.transcription === '') !== (newTranscription.partOfSpeech === 0)}
                     >
                         <td>{category}</td>
                         <td>{filename}</td>
                         <td class="transcription">
-                            {#if newTranscriptions[fullName].transcription.length > 100}
+                            {#if newTranscription.transcription.length > 100}
                         <textarea rows="3"
-                                  bind:value={newTranscriptions[fullName].transcription}
-                                  on:focus={() => currentFocused = undefined}
+                                  bind:value={newTranscription.transcription}
+                                  onfocus={() => currentFocused = undefined}
                         ></textarea>
                             {:else}
                                 <input type="text" list="existing-transcriptions"
-                                       bind:value={newTranscriptions[fullName].transcription}
-                                       on:focus={() => currentFocused = fullName}
+                                       bind:value={newTranscription.transcription}
+                                       onfocus={() => currentFocused = fullName}
                                 />
                                 {#if originalTranscription}
                                     <Diff
                                             oldStr={originalTranscription.transcription}
-                                            newStr={newTranscriptions[fullName].transcription}
+                                            newStr={newTranscription.transcription}
                                     />
                                 {/if}
                             {/if}
                         </td>
                         <td>
-                            <select bind:value={newTranscriptions[fullName].partOfSpeech}>
+                            <select bind:value={newTranscription.partOfSpeech}>
                                 {#each Object.entries(PARTS_OF_SPEECH_LONG) as [partOfSpeechId,partOfSpeech]}
                                     <option value={+partOfSpeechId}>{partOfSpeech}</option>
                                 {/each}
                             </select>
                             {#if originalTranscription}
-                                {#if originalTranscription.partOfSpeech === newTranscriptions[fullName].partOfSpeech}
+                                {#if originalTranscription.partOfSpeech === newTranscription.partOfSpeech}
                                     <span class="no-changes">Same as original</span>
                                 {:else}
                                 <span>

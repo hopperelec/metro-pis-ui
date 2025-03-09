@@ -3,33 +3,51 @@ import {
 	DOT_MATRIX_HEIGHT,
 	DOT_MATRIX_WIDTH,
 } from "$lib/components/dot-matrix/index";
+import {untrack} from "svelte";
 
-export let text: string;
-export let circularDots = true;
-export let dotSize = 0.5;
-export let mode: "scroll" | "center" | "full" = "center";
-export let scrollSpeed = 50; // in columns per second
-export let scrollResetTime = 1000; // in milliseconds
+let {
+    text,
+    circularDots = true,
+    dotSize = 0.5,
+    mode = "center",
+    scrollSpeed = 50,
+    scrollResetTime = 1000
+}: {
+    text: string;
+    circularDots?: boolean;
+    dotSize?: number;
+    mode?: "scroll" | "center" | "full";
+    scrollSpeed?: number; // in columns per second
+    scrollResetTime?: number; // in milliseconds
+} = $props();
 
-$: scrollResetColumns = scrollResetTime / scrollSpeed;
-$: numScrollColumns = text.length * 6 + DOT_MATRIX_WIDTH; // Approximate
+let scrollResetColumns = $derived(scrollResetTime / scrollSpeed);
+let numScrollColumns = $derived(text.length * 6 + DOT_MATRIX_WIDTH); // Approximate
 
 let scrollInterval: NodeJS.Timeout;
-let scrollPosition = 0;
-function resetScroll() {
-	clearInterval(scrollInterval);
-	if (mode === "scroll") {
-		scrollPosition = 0;
-		scrollInterval = setInterval(() => {
-			if (scrollPosition < numScrollColumns + scrollResetColumns) {
-				scrollPosition++;
-			} else {
-				scrollPosition = 0;
-			}
-		}, 1000 / scrollSpeed);
-	}
-}
-$: if (text && mode) resetScroll();
+let scrollPosition = $state(0);
+$effect(() => {
+    // restart scrolling when `text` changes
+    // and stop scrolling when `mode` changes
+    text;
+    clearInterval(scrollInterval);
+    if (mode === "scroll") {
+        scrollPosition = 0;
+        untrack(() => {
+            // Don't restart scrolling when:
+            // - `scrollPosition` changes, which would cause a loop
+            // - when `scrollSpeed` changes
+            // - when `scrollResetTime` changes
+            scrollInterval = setInterval(() => {
+                if (scrollPosition < numScrollColumns + scrollResetColumns) {
+                    scrollPosition++;
+                } else {
+                    scrollPosition = 0;
+                }
+            }, 1000 / scrollSpeed);
+        })
+    }
+});
 </script>
 
 <div id="container"

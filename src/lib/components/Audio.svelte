@@ -1,17 +1,19 @@
 <script lang="ts">
-export let src: string;
-export let fullName: string | undefined = undefined;
+let { src, fullName = undefined }: {
+    src: string;
+    fullName?: string;
+} = $props();
 
-let time: number;
-let duration: number;
-let paused: boolean;
+let time: number = $state(0);
+let duration: number | undefined = $state();
+let paused: boolean = $state(true);
 </script>
 
 <div id="container">
     <audio preload="none" {src} bind:currentTime={time} bind:duration={duration} bind:paused={paused}></audio>
     {#if fullName}<p>{fullName}</p>{/if}
     <div id="controls">
-        <button on:click={() => paused = !paused}>{paused ? "▶️" : "⏸️"}</button>
+        <button onclick={() => paused = !paused}>{paused ? "▶️" : "⏸️"}</button>
         <input type="range" bind:value={time} max={duration || 0} step="0.01"/>
         <a href={src} download={fullName?.replace("/","-") || true}>💾</a>
     </div>
