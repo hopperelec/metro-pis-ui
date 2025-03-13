@@ -215,12 +215,28 @@ table {
     width: 100%;
 }
 
+thead {
+    background-color: #ccc;
+}
+
 .modified {
     background-color: #fa5;
 }
 
 .incomplete {
-    background-color: #f55;
+    background-color: #f99;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #eee;
+
+    &.modified {
+        background-color: #f83
+    }
+
+    &.incomplete {
+        background-color: #f77
+    }
 }
 
 .no-changes {

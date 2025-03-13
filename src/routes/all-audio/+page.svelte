@@ -48,4 +48,12 @@ main {
 .audio {
     display: flex;
 }
+
+thead {
+    background-color: #ccc;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #eee;
+}
 </style>

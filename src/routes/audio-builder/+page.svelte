@@ -219,4 +219,12 @@ input[type="text"] {
     width: 100%;
     box-sizing: border-box;
 }
+
+thead > :last-child {
+    background-color: #ccc;
+}
+
+tbody > tr:nth-child(even) {
+    background-color: #eee;
+}
 </style>
