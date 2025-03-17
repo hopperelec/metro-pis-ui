@@ -34,7 +34,7 @@ onMount(() => {
 		// noinspection SpellCheckingInspection
 		font = parseImage(
 			image,
-			"abcdefghiklmnoprstuvwxyABCDEFGHIJKLMNOPRSTUWX12,.",
+			"abcdefghiklmnoprstuvwxyABCDEFGHIJKLMNOPRSTUWX12,.?{}",
 			5,
 		);
 		const otfURL = generateOTF(font, true, 0.5, 1);
