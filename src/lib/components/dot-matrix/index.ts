@@ -26,7 +26,9 @@ export function parseImage(
 	for (let x = 0; x < image.width; x++) {
 		if (data[x * 4] === 128) {
 			// Column is a separator
-			glyphs[expectedCharacters[numChars++]] = currChar;
+			if (numChars++ < expectedCharacters.length) {
+				glyphs[expectedCharacters[numChars-1]] = currChar;
+			}
 			currChar = [];
 		} else {
 			let currCol = [];
@@ -43,15 +45,13 @@ export function parseImage(
 			currChar.push(currCol);
 		}
 	}
-	// Add last character if it exists
-	if (currChar.length > 0) {
-		glyphs[expectedCharacters[numChars++]] = currChar;
+	if (numChars++ < expectedCharacters.length) {
+		// Add last character
+		glyphs[expectedCharacters[numChars]] = currChar;
 	}
 
 	if (numChars !== expectedCharacters.length) {
-		console.warn(
-			`Expected ${expectedCharacters.length} characters, but found ${numChars}`,
-		);
+		console.warn(`Expected ${expectedCharacters.length} characters, but found ${numChars}`);
 	}
 
 	if (!glyphs[" "]) {
