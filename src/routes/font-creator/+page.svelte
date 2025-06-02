@@ -5,13 +5,14 @@ import {
 	generateOTF,
 	parseImage,
 } from "$lib/components/dot-matrix";
-import FontDotMatrix from "$lib/components/dot-matrix/FontDotMatrix.svelte";
-import SVGDotMatrix from "$lib/components/dot-matrix/SVGDotMatrix.svelte";
+import FontMetrocarDotMatrix from "$lib/components/dot-matrix/FontMetrocarDotMatrix.svelte";
+import SvgMetrocarDotMatrix from "$lib/components/dot-matrix/SVGMetrocarDotMatrix.svelte";
 import DotMatrixImage from "$lib/media/dot-matrix.webp";
 
 // Input data
 let imageFiles: FileList | undefined = $state();
 let expectedCharacters = $state("");
+let fontFamilyName = $state("Metrocar Dot Matrix");
 let isGenerated = $state(false);
 
 // OTF style options
@@ -28,7 +29,7 @@ function generate() {
     if (!image || !expectedCharacters) return;
 	isGenerated = true;
 	font = parseImage(image, expectedCharacters, spaceWidth);
-	otfURL = generateOTF(font, circularDots, dotSize, characterSpacing);
+	otfURL = generateOTF(font, fontFamilyName, circularDots, dotSize, characterSpacing);
 	document.fonts.add(new FontFace("DotMatrix", `url(${otfURL})`));
 }
 
@@ -48,7 +49,6 @@ let image: HTMLImageElement | undefined = $derived.by(() => {
 <main>
     <p>To use this, first create an image.</p>
     <ul>
-        <li>The image should be 9 pixels tall.</li>
         <li>The image should contain a horizontal strip of characters.</li>
         <li>
             Only the red channel of the image will be checked, so you can use other channels for annotations.
@@ -75,6 +75,8 @@ let image: HTMLImageElement | undefined = $derived.by(() => {
     {/if}
     <p>And type the characters in the order they appear in the image:</p>
     <input type="text" placeholder="abc..." bind:value={expectedCharacters}/>
+    <p>Optionally, you can also change the font family name:</p>
+    <input type="text" bind:value={fontFamilyName}/>
 
     <div>
         <h3>Style options</h3>
@@ -107,14 +109,14 @@ let image: HTMLImageElement | undefined = $derived.by(() => {
             <p>Style options will sync with the SVG preview, but you will need to click "Generate" again to update the OTF preview.</p>
             <p>SVG Preview:</p>
             {#if font}
-                <SVGDotMatrix {font} text={expectedCharacters} {circularDots} {dotSize} {characterSpacing} mode="full"/>
-            {:else}
-                <p>Loading...</p>
-            {/if}
-            <p>OTF Preview:</p>
-            {#if otfURL}
-                <FontDotMatrix text={expectedCharacters} {circularDots} {dotSize} mode="full"/>
-                <a download="DotMatrix.otf" href={otfURL}>Download OTF file</a>
+                <SvgMetrocarDotMatrix {font} text={expectedCharacters} {circularDots} {dotSize} {characterSpacing} mode="full"/>
+                <p>OTF Preview:</p>
+                {#if otfURL}
+                    <FontMetrocarDotMatrix text={expectedCharacters} height={font?.height} {circularDots} {dotSize} mode="full"/>
+                    <a download={`${fontFamilyName}.otf`} href={otfURL}>Download OTF file</a>
+                {:else}
+                    <p>Loading...</p>
+                {/if}
             {:else}
                 <p>Loading...</p>
             {/if}

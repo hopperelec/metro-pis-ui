@@ -1,12 +1,12 @@
 <script lang="ts">
 import {
-	DOT_MATRIX_HEIGHT,
-	DOT_MATRIX_WIDTH,
+	METROCAR_DOT_MATRIX_WIDTH,
 } from "$lib/components/dot-matrix/index";
 import {untrack} from "svelte";
 
 let {
     text,
+    height,
     circularDots = true,
     dotSize = 0.5,
     mode = "center",
@@ -14,6 +14,7 @@ let {
     scrollResetTime = 1000
 }: {
     text: string;
+    height?: number;
     circularDots?: boolean;
     dotSize?: number;
     mode?: "scroll" | "center" | "full";
@@ -22,7 +23,7 @@ let {
 } = $props();
 
 let scrollResetColumns = $derived(scrollResetTime / scrollSpeed);
-let numScrollColumns = $derived(text.length * 6 + DOT_MATRIX_WIDTH); // Approximate
+let numScrollColumns = $derived(text.length * 6 + METROCAR_DOT_MATRIX_WIDTH); // Approximate
 
 let scrollInterval: NodeJS.Timeout;
 let scrollPosition = $state(0);
@@ -53,7 +54,7 @@ $effect(() => {
 <div id="container"
      class:scroll={mode === 'scroll'} class:center={mode === 'center'} class:full={mode === 'full'}
      style:--dot-size={dotSize}
-     style:--dot-matrix-height={DOT_MATRIX_HEIGHT} style:--dot-matrix-width={DOT_MATRIX_WIDTH}
+     style:--dot-matrix-height={height} style:--dot-matrix-width={METROCAR_DOT_MATRIX_WIDTH}
      style:--scroll-position={scrollPosition}
 >
     <div id="background" class:circular-dots={circularDots}></div>

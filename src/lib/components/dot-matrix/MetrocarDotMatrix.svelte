@@ -1,6 +1,6 @@
 <script lang="ts">
-import FontDotMatrix from "$lib/components/dot-matrix/FontDotMatrix.svelte";
-import SVGDotMatrix from "$lib/components/dot-matrix/SVGDotMatrix.svelte";
+import FontMetrocarDotMatrix from "$lib/components/dot-matrix/FontMetrocarDotMatrix.svelte";
+import SvgMetrocarDotMatrix from "$lib/components/dot-matrix/SVGMetrocarDotMatrix.svelte";
 import {
 	type DotMatrixFont,
 	generateOTF,
@@ -38,14 +38,14 @@ onMount(() => {
 			"abcdefghiklmnoprstuvwxyABCDEFGHIJKLMNOPRSTUWX12,.?{}'",
 			5,
 		);
-		const otfURL = generateOTF(font, true, 0.5, 1);
+		const otfURL = generateOTF(font, "DotMatrix", true, 0.5, 1);
 		document.fonts.add(new FontFace("DotMatrix", `url(${otfURL})`));
 	};
 	image.src = DotMatrixImage;
 });
 </script>
 
-<FontDotMatrix text={pages[currentPageNumber]} mode={pages.length === 1 ? "scroll" : "center"} />
+<FontMetrocarDotMatrix text={pages[currentPageNumber]} height={font} mode={pages.length === 1 ? "scroll" : "center"} />
 {#if font}
-    <SVGDotMatrix {font} text={pages[currentPageNumber]} mode={pages.length === 1 ? "scroll" : "center"} />
+    <SvgMetrocarDotMatrix {font} text={pages[currentPageNumber]} mode={pages.length === 1 ? "scroll" : "center"} />
 {/if}

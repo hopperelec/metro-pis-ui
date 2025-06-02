@@ -1,13 +1,9 @@
 <script lang="ts">
 import {
-	DOT_MATRIX_HEIGHT,
-	DOT_MATRIX_WIDTH,
+	METROCAR_DOT_MATRIX_WIDTH,
 	type DotMatrixFont,
 	type DotMatrixGlyph,
 } from "$lib/components/dot-matrix";
-
-const EMPTY_COLUMN = new Array(DOT_MATRIX_HEIGHT).fill(false);
-const EMPTY_DISPLAY = new Array(DOT_MATRIX_WIDTH).fill(EMPTY_COLUMN);
 
 let {
     font,
@@ -29,14 +25,16 @@ let {
     scrollResetTime?: number; // in milliseconds
 } = $props();
 
+let emptyColumn = $derived(new Array(font.height).fill(false));
+let emptyDisplay = $derived(new Array(METROCAR_DOT_MATRIX_WIDTH).fill(emptyColumn));
 let scrollResetColumns = $derived(scrollResetTime / scrollSpeed);
-let spacing = $derived(new Array(characterSpacing).fill(EMPTY_COLUMN));
+let spacing = $derived(new Array(characterSpacing).fill(emptyColumn));
 
 let renderedText: DotMatrixGlyph = $derived(
     text.split("")
 		.flatMap((character) => {
-			if (!(character in font)) {
-				if (" " in font) {
+			if (!(character in font.glyphs)) {
+				if (" " in font.glyphs) {
 					console.warn(`Character "${character}" not found in font`);
 					character = " ";
 				} else {
@@ -45,19 +43,19 @@ let renderedText: DotMatrixGlyph = $derived(
 					);
 				}
 			}
-			return [...spacing, ...font[character]];
+			return [...spacing, ...font.glyphs[character]];
 		})
 		.slice(1)
 );
 
-let numScrollColumns = $derived(renderedText.length + DOT_MATRIX_WIDTH);
+let numScrollColumns = $derived(renderedText.length + METROCAR_DOT_MATRIX_WIDTH);
 
-let renderedDisplay = $state(EMPTY_DISPLAY);
+let renderedDisplay = $state([]) as boolean[][];
 let scrollInterval: NodeJS.Timeout;
 $effect(() => {
 	clearInterval(scrollInterval);
 	if (mode === "scroll") {
-		renderedDisplay = EMPTY_DISPLAY.slice();
+		renderedDisplay = emptyDisplay.slice();
 		let x = 0;
 		scrollInterval = setInterval(() => {
 			if (x < numScrollColumns + scrollResetColumns) {
@@ -70,11 +68,11 @@ $effect(() => {
 			}
 		}, 1000 / scrollSpeed);
 	} else if (mode === "center") {
-		const padding = (DOT_MATRIX_WIDTH - renderedText.length) / 2;
+		const padding = (METROCAR_DOT_MATRIX_WIDTH - renderedText.length) / 2;
 		renderedDisplay = [
-			...new Array(Math.floor(padding)).fill(EMPTY_COLUMN),
+			...new Array(Math.floor(padding)).fill(emptyColumn),
 			...renderedText,
-			...new Array(Math.ceil(padding)).fill(EMPTY_COLUMN),
+			...new Array(Math.ceil(padding)).fill(emptyColumn),
 		];
 	} else {
 		renderedDisplay = renderedText;
@@ -82,8 +80,8 @@ $effect(() => {
 });
 </script>
 
-<div style:--dot-matrix-height={DOT_MATRIX_HEIGHT}>
-    <svg viewBox={`-1 -.5 ${renderedDisplay.length+1} ${DOT_MATRIX_HEIGHT}`} fill="#333">
+<div style:--dot-matrix-height={font.height}>
+    <svg viewBox={`-1 -.5 ${renderedDisplay.length+1} ${font.height}`} fill="#333">
         <defs>
             <!-- Styles are inlined so that they are kept if the SVG is copied -->
             <!--suppress CssUnusedSymbol -->
