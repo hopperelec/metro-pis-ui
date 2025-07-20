@@ -60,7 +60,7 @@ $effect(() => {
 		scrollInterval = setInterval(() => {
 			if (x < numScrollColumns + scrollResetColumns) {
 				if (x < numScrollColumns) {
-					renderedDisplay = [...renderedDisplay.slice(1), renderedText[x]];
+					renderedDisplay = [...renderedDisplay.slice(1), renderedText[x] || emptyColumn];
 				}
 				x++;
 			} else {
