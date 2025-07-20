@@ -45,7 +45,7 @@ onMount(() => {
 });
 </script>
 
-<FontMetrocarDotMatrix text={pages[currentPageNumber]} height={font} mode={pages.length === 1 ? "scroll" : "center"} />
+<FontMetrocarDotMatrix text={pages[currentPageNumber]} height={font?.height} mode={pages.length === 1 ? "scroll" : "center"} />
 {#if font}
     <SvgMetrocarDotMatrix {font} text={pages[currentPageNumber]} mode={pages.length === 1 ? "scroll" : "center"} />
 {/if}
